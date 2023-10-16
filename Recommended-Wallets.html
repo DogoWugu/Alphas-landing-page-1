@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+    <title>ALPHA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+    <header class="sticky-header">
+        <a href="#" class="logo_article">
+            <img src="img/Alphas-logo-2.webp" alt="ALPHA Logo" width="150">  <!-- Adjust width as needed -->
+        </a>
+        <div class="menu-toggle" id="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <div class="nav-desk" id="desktop-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#Tokenomics">Tokenomic</a></li>
+                <li><a href="index.html#Charity">Charity</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+                <div class="translate-btn">
+                    <span class="flag flag-en"></span> EN
+                    <div class="languages-overlay">
+                        <a href="#" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                        <a href="/Cn/Recommended-Wallets-cn.html" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+                    </div>
+                </div>
+                
+            </ul>
+
+        </div>
+    </header>
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay">
+        <ul class="overlay-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Tokenomics">Tokenomic</a></li>
+            <li><a href="#Charity">Charity</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="title">
+        <h1>Recommended Wallets</h1>
+        <a href="#" onclick="history.back()" class="back-link">&lt; Go Back</a>
+
+        <b>Recommended-Wallets</b>
+    </div>
+    
+    <div class="article">
+        <div class="article-content">
+            <!-- Main Heading -->
+            <h1>Recommended Wallets for ALPHAS Token</h1>
+            
+            <!-- Subheading/Description -->
+            <p>ALPHAS is an ERC20 token, residing on the Ethereum blockchain. To safely store and manage your ALPHAS tokens, it's crucial to use compatible wallets. Here's our top recommendation:</p>
+    
+            <ul>
+                <li><b>Metamask</b>: A popular browser-based wallet that's easy to use. It integrates with most web3 platforms seamlessly.</li>
+            </ul>
+  
+            <div class="metamask-instructions">
+                <h2>How to install MetaMask:</h2>
+                <div class="tabs">
+                    <button class="tab" onclick="showContent('browser')">Browser extension</button>
+                    <button class="tab" onclick="showContent('mobile')">Mobile app</button>
+                </div>
+            
+                <div id="browser" class="tab-content">
+                    <div class="dropdowns">
+                        <button onclick="showDropdown('browserChrome')">Chrome</button>
+                        <button onclick="showDropdown('browserFirefox')">Firefox</button>
+                        <button onclick="showDropdown('browserEdge')">Edge</button>
+                    </div>
+                    
+                    <div id="browserChrome" class="dropdown-content" style="display: none;">
+                        <ol>
+                           
+                                <li>Visit <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                                <li>Hit "Download" in the menu bar.</li>
+                                <li>Click “Install MetaMask for Chrome”. You will be directed to the Chrome Web Store.</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9914368739099" alt="MetaMask Chrome Web Store" class="metamask-instructions-img">
+                            
+                            
+                                <li>Install MetaMask Chrome</li>
+                                <li>Click “Add to Chrome”.</li>
+                                <li>On the pop up, click “Add extension”.</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9914368713115" alt="Add MetaMask Extension" class="metamask-instructions-img">
+                           
+                            <li>
+                                <p>After adding MetaMask Extension, MetaMask will automatically open. You can also make sure it's easily accessible in your toolbar by clicking the jigsaw icon in the top-right of the screen, and hitting the pin icon.</p>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div id="browserFirefox" class="dropdown-content" style="display: none;">
+                        <ol>
+                            
+                                <li>Visit <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                                <li>Click on "Download".</li>
+                                <li>Hit "Install MetaMask for Firefox".</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9914790810139" alt="MetaMask Firefox Extension" class="metamask-instructions-img">
+                            
+                            
+                                <li>In the new window that opens, click on "Add to Firefox".</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9914739324187" alt="Add MetaMask to Firefox" class="metamask-instructions-img">
+                            
+                            <li>
+                                <p>After adding MetaMask Extension, you’ll return to your browser page. MetaMask will appear on your browser; click on it to open MetaMask.</p>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div id="browserEdge" class="dropdown-content" style="display: none;">
+                        <ol>
+                           
+                                <li>Visit <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                                <li>Click on "Download".</li>
+                                <li>Hit "Install MetaMask for Edge".</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9915320203291" alt="MetaMask Edge Extension" class="metamask-instructions-img">
+                            
+                            
+                                <li>In the new window that opens, click "Get".</li>
+                                <img src="https://support.metamask.io/hc/article_attachments/9915303914395" alt="Add MetaMask to Edge" class="metamask-instructions-img">
+                            
+                            <li>
+                                <p>After adding MetaMask Extension, MetaMask will automatically open. You can also make sure it's easily accessible in your toolbar by clicking the jigsaw icon in the top-right of the screen, clicking on the 3 dots next to the MetaMask extension, and selecting "Show in Toolbar".</p>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                    
+                <div id="mobile" class="tab-content" style="display: none;">
+                    <p>Firstly: do not download MetaMask from anywhere other than the official app store appropriate to your device/OS. Cloned versions of MetaMask are out there that are programmed to record your Secret Recovery Phrase as soon as it's generated. To avoid falling victim to these scams, make sure you download the official MetaMask app from the app store on your device, and not from any other source.</p>
+            
+                    <div class="dropdowns">
+                        <button onclick="showDropdown('iOS')">iOS</button>
+                        <button onclick="showDropdown('Android')">Android</button>
+                    </div>
+                            
+                    <div id="iOS" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>
+                                <p>Open the App Store and hit the search button in the bottom right. Input MetaMask into the search bar.</p>
+                                <!-- Place your image here -->
+                                <img src="https://support.metamask.io/hc/article_attachments/9915602462491" alt="MetaMask on App Store" width="300" height="200" class="metamask-instructions-img">
+                            </li>
+                            <li>
+                                <h3>Install MetaMask iOS</h3>
+                                <p>Either click 'Get' or tap on the name of the app to see more details. Complete the usual App Store download confirmation process.</p>
+                            </li>
+                            <li>
+                                <p>Once installed, open the app and follow the prompts to create your wallet.</p>
+                                <p><strong>Back up your Secret Recovery Phrase somewhere safe and offline!</strong></p>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div id="Android" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>
+                                <p>Open the Play Store and search for "MetaMask". The official MetaMask app looks like the screenshot below. Be VERY CAREFUL that you don't install a fake MetaMask app! Look for the one with 10M+ downloads.</p>
+
+                            <img src="https://support.metamask.io/hc/article_attachments/9915891139227" alt="MetaMask on Play Store" width="300" height="200" class="metamask-instructions-img"> 
+                            </li>
+                            <li>
+                                <h3>Install MetaMask Android</h3>
+                                <p>Tap 'Install' and wait for the process to finish.</p>
+                            </li>
+                            <li>
+                                <p>Once installed, open the app and follow the prompts to create your wallet.</p>
+                                <p><strong>Back up your Secret Recovery Phrase somewhere safe and offline!</strong></p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function showContent(tab) {
+        // Hide all tab contents
+        document.getElementById('browser').style.display = 'none';
+        document.getElementById('mobile').style.display = 'none';
+
+        // Remove selected class from all tabs
+        document.querySelector('.tab.selected')?.classList.remove('selected');
+
+        // Show the selected content
+        if (tab === 'browser') {
+            document.getElementById('browser').style.display = 'block';
+            document.querySelector('button[onclick="showContent(\'browser\')"]').classList.add('selected');
+        } else if (tab === 'mobile') {
+            document.getElementById('mobile').style.display = 'block';
+            document.querySelector('button[onclick="showContent(\'mobile\')"]').classList.add('selected');
+        }
+    }
+    
+    function showDropdown(os) {
+    // For mobile
+    const ios = document.getElementById('iOS');
+    const android = document.getElementById('Android');
+
+    // For browser
+    const chrome = document.getElementById('browserChrome');
+    const firefox = document.getElementById('browserFirefox');
+    const edge = document.getElementById('browserEdge');
+
+    // Hide all dropdowns first
+    ios.style.display = 'none';
+    android.style.display = 'none';
+    chrome.style.display = 'none';
+    firefox.style.display = 'none';
+    edge.style.display = 'none';
+
+    // Remove .selected class from all dropdown buttons
+    document.querySelectorAll('.dropdowns button').forEach(btn => btn.classList.remove('selected'));
+
+    // Show the selected dropdown and add .selected class to the corresponding button
+    switch (os) {
+        case 'iOS':
+            ios.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'iOS\')"]').classList.add('selected');
+            break;
+        case 'Android':
+            android.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'Android\')"]').classList.add('selected');
+            break;
+        case 'browserChrome':
+            chrome.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserChrome\')"]').classList.add('selected');
+            break;
+        case 'browserFirefox':
+            firefox.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserFirefox\')"]').classList.add('selected');
+            break;
+        case 'browserEdge':
+            edge.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserEdge\')"]').classList.add('selected');
+            break;
+    }
+}
+
+    </script>
+    
+            
+            <style>
+
+                .selected {
+                background-color: #00FFFF;  /* Light cyan color */
+                color: #000;                /* Text color for contrast */
+                box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.8); /* Cyan glow effect */
+                transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+                }
+
+
+                .metamask-instructions {
+                    border: 1px solid #dcdcdc;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+                }
+                .metamask-instructions-img{
+                    width: 60%;
+                    height: 60%;
+                }
+                @media only screen and (max-width: 768px) {
+                .metamask-instructions-img{
+                      width: 107%;
+                      height: 85%;
+                  }
+                }
+                .tabs .tab {
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    transition: background-color 0.3s;
+                }
+                
+                .tabs .tab:hover {
+                    background-color: #f9f9f9;
+                }
+            
+                .tab-content, .dropdown-content {
+                    padding: 20px;
+                    margin-top: 20px;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 5px;
+                    color: white;
+                }
+            
+                .dropdowns button {
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    transition: background-color 0.3s;
+                }
+            
+                .dropdowns button:hover {
+                    background-color: #f9f9f9;
+                }
+            </style>
+            
+
+<!-- FAQ Section -->
+
+<div class="Contact" id="Contact">  
+
+
+</div>
+
+
+    
+</body>
+
+<footer>
+    <div class="footer-content" id="Footer">
+        <div class="footer-logo">
+            <img src="/img/ALPHAS-LOGO .webp" alt="ALPHAS LOGO">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html#About">ABOUT</a></li>
+                <li><a href="#FAQ">HELP</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html#Contact">CONTACT</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="index.html#About">ALPHAS TOKEN</a></li>
+                <li><a href="index.html#About">GUIDES</a></li>
+            </ul>
+            <ul class="footer-actions">
+                <li><button>Swap ALPHAS Coin</button></li>
+                <li><button>Buy ETH with fiat</button></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <!-- Add your social icons here -->
+            <img src=" ">
+            <img src=" ">
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 ALPHAS. All Rights Reserved.</p>
+            <p>Privacy Policy - Terms and Conditions</p>
+            <p>ALPHAS coin is not an investment and created as a meme. It has no intrinsic value or expectations of financial return. ALPHAS coin makes no promises and is not responsible for any losses or errors. Use at your own risk.</p>
+        </div>
+        </div>
+   
+</footer>
+
+
+</html>

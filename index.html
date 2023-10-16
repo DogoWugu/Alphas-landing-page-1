@@ -1,0 +1,556 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <meta charset="UTF-8">
+
+    <title>ALPHAS</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="scripts.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const clickableImages = document.querySelectorAll('[data-clickable]');
+
+    clickableImages.forEach(img => {
+        img.addEventListener('click', function() {
+            const targetUrl = img.getAttribute('data-href');
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            }
+        });
+    });
+});
+
+</script>
+<script>
+    $(document).ready(function(){
+        // For Phase 1
+        $('.roadmap-item:nth-child(1)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase1.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+    
+        // For Phase 2
+        $('.roadmap-item:nth-child(2)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase2.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+            // For Phase 3
+            $('.roadmap-item:nth-child(3)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase3.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+    
+        // For Phase 4
+        $('.roadmap-item:nth-child(4)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase4.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+        // Repeat for other phases...
+    });
+    </script>
+    
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="#" class="logo">
+            <img src="img/Alphas-logo-2.webp" alt="ALPHAS Logo" width="150">  <!-- Adjust width as needed -->
+        </a>
+        <div class="menu-toggle" id="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <div class="nav-desk" id="desktop-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Tokenomics">Tokenomic</a></li>
+                <li><a href="#Roadmap">Roadmap</a></li>
+                <li><a href="#Charity">Charity</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <div class="translate-btn">
+                    <span class="flag flag-en"></span> EN
+                    <div class="languages-overlay">
+                        <a href="#About" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                        <a href="/Cn/index-cn.html" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <button id="playMusic" title="Play Music" hidden>
+                        <i class="fa fa-play"></i> <!-- You can replace this with an image or another icon -->
+                    </button>
+                    <button id="pauseMusic" title="Pause Music">
+                        <i class="fa fa-pause"></i> <!-- You can replace this with an image or another icon -->
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay">
+        <ul class="overlay-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Tokenomics">Tokenomic</a></li>
+            <li><a href="#Roadmap">Roadmap</a></li>
+            <li><a href="#Charity">Charity</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <section id="home" >
+
+        <img src="/img/Paralax/mountains_behind.webp" id="mountains_behind" alt="mountains_behind">
+        <img src="/img/Paralax/stars.png" id="stars" alt="stars">
+        <img src="/img/Paralax/moon.webp" id="moon" alt="moon">   
+        <img src="/img/Paralax/Gajah2.webp" id="gajah" alt="gajah">
+        <img src="/img/Paralax//Ella-Solo.webp" id="Ella_Solo" alt="Elephant">
+        <img src="/img/Paralax/Logo.webp" id="logo1" alt="Logo">
+
+     <!--   <img src="/img/Paralax/mountains_front.webp" id="mountains_front"> -->
+        <img src="/img/Paralax/mountains_front-2.png" id="mountains_front" alt="Mountains_front">
+        <h2 id="text"></h2>
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xbd6a95ff59b502b891046efd0990c59a0d1ed0b8" id="btn">DexTools</a>
+        <a href="#sec" id="btn2">Launch app</a>
+
+
+
+<a href="#About" class="bouncing-arrow-container" id="bouncing-arrow-container">
+    <div class="bouncing-circle"></div>
+    <div class="bouncing-arrow"></div>
+</a>
+
+
+    </section>
+    
+
+     <!-- As seen marquee -->
+     <div class="social-icons">
+        <a href="https://twitter.com/AlphasElephant" target="_blank"><img src="/img/icons/Twitter.png" alt="Twitter Icon"></a><br>
+        <a href="https://t.me/AlphasElephant" target="_blank"><img src="/img/icons/Telegram.png" alt="Telegram Icon"></a><br>
+
+    </div>
+    
+    <div class="as-seen-in" id="About">
+        <h1>As Seen In </h1>
+        <div class="marquee">
+            <div class="logos">
+                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                <!-- Repeat logos for continuous effect -->
+                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                 <!-- Repeat logos for continuous effect -->
+                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                 <!-- Repeat logos for continuous effect -->
+                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="About">
+        
+        <div class="about-content">
+            <video class="bg-video" preload="auto" loop muted>
+                <source src="/Andrew-story.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            
+        
+            <h2>ABOUT</h2>
+            <h1>Journey Behind ALPHA's Vision</h1>
+            <p><p>In order for you to understand my motivation and be able to share my vision I will need to tell you my story and how my journey began. The steps that I originally had to take to set out on my path were as hard as any first step I have had to take. That first step was a step away from the edge of eternity&hellip;</p></p>
+            <a href="About.html" class="btn">Read more</a>
+
+            
+        </div>
+        <div class="about-image">
+            <img class="under" src="/img/3.webp" alt="Description of the image">
+        </div>
+        
+    </div>
+    <div class="getting-started" id="getting-started">
+        
+        <h2>Getting started</h2>
+        <div class="content-wrapper">
+        <div class="getting-started-content">
+            
+            <h1>Choose your wallet</h1>
+            <p>Starting with ALPHAS TOKEN requires a secure digital wallet. This apps will store your tokens and ensure safe transactions.</p>
+            <a href="Recommended-Wallets.html" class="btn">Recommended Wallets</a> 
+        </div>
+        <div class="getting-started-content">
+            
+            <h1>Configure your wallet</h1>
+            <p>After setting up your chosen wallet, you can securely store $ALPHAS and position yourself to earn passive income through staking. </p>
+            <a href="Wallets-guide.html" class="btn">Wallets guide</a>
+        </div>
+        <div class="getting-started-content">
+            
+            <h1>Get some $ALPHAS</h1>
+            <p>Ready to dive into the world of ALPHAS TOKEN? You can purchase $ALPHAS through uniswap </p>
+            <a href="buy.html" class="btn">Buy $APLHA Now</a>   
+        </div>
+    </div>
+
+    </div>
+
+<!-- Utility Section -->
+
+<div class="utilities-slider">
+    <h1>Utility</h1>
+    <h2>The ALPHAS ecosystem</h2>
+    <div class="utility-row"> 
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+            <div class="slide-img">
+                <img class="slide-logo" src="/img/Utility/Staking-utility-logo.webp" alt="Utility" />
+                <img class="front-image" src="/img/Utility/Staking-utility-front.webp" alt="Utility" />
+                <img class="bg-image" src="/img/Utility/Staking-utility.webp" alt="Utility" />
+              </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Utility Box 2 -->
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+                <div class="slide-img">
+                    <img data-clickable data-href="lottery.html" class="slide-logo" src="/img/Utility/Lottery-utility-logo.webp" alt="Utility" />
+                    <img data-clickable data-href="lottery.html" class="front-image" src="/img/Utility/Lottery-utility-front.webp" alt="Utility" />
+                    <img data-clickable data-href="lottery.html" class="bg-image" src="/img/Utility/Lottery-utility.webp" alt="Utility" />
+                </div>
+                
+                  </div>
+        </div>
+    </div>
+
+    <!-- Utility Box 3 -->
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+                <div class="slide-img">
+                    <img class="slide-logo" src="/img/Utility/Alphas Sanctuary-logo.webp" alt="Utility" />
+                    <img class="front-image" src="/img/Utility/Alphas Sanctuary-utility-front.webp" alt="Utility" />
+                    <img class="bg-image" src="/img/Utility/Alphas Sanctuary-utility.webp" alt="Utility" />
+                  </div>
+                  </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+
+</div>
+
+
+
+
+
+    <!-- Add more utility boxes as per your requirement -->
+
+
+
+
+
+
+<!-- Tokenomic Section -->
+<div class="tokenomic-section" id="Tokenomics">
+
+
+    <h2>Tokenomics</h2>
+    <div class="token-details">
+        <div class="token-box">
+            <h3>Token Supply</h3>
+            <p>1,000,000,000,000 ALPHAS</p>
+        </div>
+        <div class="token-box">
+            <h3>Buy Tax</h3>
+            <p>2%</p>
+        </div>
+        <div class="token-box">
+            <h3>Sell Tax</h3>
+            <p>3%</p>
+        </div>
+        <div class="token-box">
+            <h3>Token Burned</h3>
+            <p>0 ALPHAS</p>
+        </div>
+    </div>
+    <div class="tax-use">
+        <h3>What is the tax used for?</h3>
+        <p>When you buy ALPHAS tokens, 2% goes to marketing. When you sell, we split the tax: 1% goes to charity, 1% to a lottery for our token holders, and 1% is burned to keep the token value up...</p>
+        <!-- <p>Our tax structure is designed for the long-term success of our project. A portion is allocated to sared among holders through a lottery mechanism, and the remaining percentage is dedicated to marketing, development, and further advancements of the project.</p>-->
+    
+    </div>
+    <div class="pie-chart-container">
+    <img src="/piechart-tokenomic.png" alt="ALPHAS LOGO">
+</div>
+    <div class="pie-chart-container2">
+        <img class="img-pie" src="/piechart-tokenomic.png" alt="ALPHAS LOGO">
+        <div class="piechart-box">
+            <h3>Supply Breakdown</h3>
+           <ul>
+            <li>40% is on Uniswap for trading.</li>
+                <li> 20% is set aside for other exchanges.</li>
+                    <li> 10% gets burned to keep the token valuable.</li>
+                        <li>30% is for those who stake their tokens and earn rewards.</li>
+           </ul>
+        </div>
+    </div>
+    
+    
+
+    <div class="extra-boxes">
+        <div class="token-box">
+            <h3>Audits</h3>
+            <p>Details about audits, security checks, and their results.</p>
+            <button class="box-button">View Audits</button>
+        </div>
+
+        <div class="token-box">
+            <h3>Voting</h3>
+            <p>Participate in governance votes and decisions.</p>
+            <button class="earn-button">Vote</button>
+
+        </div>
+    </div>
+
+    <div class="earn-section">
+        <h3>Start Earning</h3>
+        <p>Earn by staking ALPHAS tokens and being an active member of our community.</p>
+        <button class="earn-button">Start Earning</button>
+    </div>
+    
+</div>
+
+<!-- Roadmap Section -->
+
+<div class="roadmap-section" id="Roadmap">
+    <h2 class="roadmap-title">Our Roadmap</h2>
+
+    <div class="roadmap-wrapper">
+
+        <div class="roadmap-content">
+            <!-- Phase 1 -->
+           
+            <div class="roadmap-item" >
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>Phase 1</h3>
+                </div>
+                
+             
+                    <li>Project inception</li>
+                    <li>Alphas assembled</li>
+                    <li>Website live</li>
+                    <li>Social media prepared</li>
+                    <li>Contract security audit</li>
+                    <li>White paper release</li>
+               
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>Phase 2</h3>
+                </div>
+                
+                    <li>Stealth launch</li>
+                    <li>2500+ Holders</li>
+                    <li>CMC & CG Listing</li>
+                    <li>Certik audit</li>
+                    <li>Trendings</li>
+                    <li>Dapp utilities: Staking, Burn, Swap</li>
+                    <li>Lottery utility</li>
+                    <li>CEX listings</li>
+                
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="roadmap-item" >
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>Phase 3</h3>
+                </div>
+                
+                    <li>5000+ Holders</li>
+                    <li>Further marketing efforts</li>
+                    <li>Surprise utilities</li>
+                    <li>Additional partnerships and collaborations</li>
+                    <li>Community governance and voting systems</li>
+               
+            </div>
+            <!-- Phase 4 -->
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>Phase 4</h3>
+                </div>
+                    <li>10,000+ Holders</li>
+                    <li>Further CEX listings</li>
+                    <li>Utility feature expansions</li>
+                    <li>Regular community events and AMAs</li>
+               
+            </div>
+
+
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Charity Section -->
+<!-- Charity Section -->
+<div class="charity-section" id="Charity">
+    <h2>Charity</h2>
+    <h1>ALPHAS TOKEN's Commitment to Elephants</h1>
+    <p>Our essence goes beyond the realm of financial growth. At the core of ALPHAS TOKEN lies a dedication to preserving the majestic elephants. We stand against the cruel act of poaching, vowing to make a difference for those orphaned and affected.</p>
+
+
+    <!-- Mission Highlights -->
+    <div class="charity-slider">
+        <div class="slide">
+            <h3>Protection</h3>
+            <p>Combatting Ivory Poaching</p>
+        </div>
+        <div class="slide">
+            <h3>Support</h3>
+            <p>Backing Orphaned Calves</p>
+        </div>
+        <div class="slide">
+            <h3>Collaboration</h3>
+            <p>Joining Hands with Multiple Sanctuaries</p>
+        </div>
+    </div>
+
+    <p>We're committed to channeling our successes to the right causes and sanctuaries, ensuring our contributions make a genuine difference. As we grow, we keep the doors open to collaborate with various sanctuaries and organizations focused on the welfare of elephants.</p>
+
+    <!-- Call to Action -->
+    <div class="cta-container">
+        <a href="buy.html" class="charity-cta">Help Us with Charity</a>
+        <a href="collaboration.html" class="charity-cta collaboration-cta">Collaborate With Us</a>
+    </div>
+</div>
+
+
+
+
+
+<!-- FAQ Section -->
+
+
+
+<div class="faq-container" id="FAQ">
+   
+
+    <!-- FAQ Accordion -->
+    <div class="faq-section" >
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">What is ALPHA Token?</h3>
+            <p class="faq-answer">ALPHA Token is a cryptocurrency project that is community-driven with an aim to benefit all its participants. The initiative is aimed at bringing change to the crypto narrative by offering transparency and a community-focused approach.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Who is the founder of ALPHA Token?</h3>
+            <p class="faq-answer">ALPHA Token was founded by Andrew Fisher, a visionary from a small town in Iowa. His journey, from humble beginnings to becoming a cryptocurrency visionary, has played a significant role in shaping the vision for ALPHA Token.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What are the fees?</h3>
+            <p class="faq-answer">For every purchase, 2% goes to marketing. On sales, 1% is designated for charity and 1% for a lottery and 1% goes to Burn</p>
+        </div>
+        <!-- Add more FAQ items as needed -->
+
+    </div>
+</div>
+
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Welcome to ALPHAS</h2>
+      <p>Would you like to enter with background music?</p>
+      <button1 id="withMusic">Yes, with music</button1>
+      <button1 id="withoutMusic">No, without music</button1>
+    </div>
+  </div>
+  <audio id="backgroundMusic" loop>
+    <source src="alphasmusic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+
+<footer>
+    <div class="footer-content" id="Footer">
+        <div class="footer-logo">
+            <img src="/img/ALPHAS-LOGO .webp" alt="ALPHAS LOGO">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#FAQ">HELP</a></li>
+            </ul>
+            <ul>
+                <li><a href="#Contact">CONTACT</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="#About">ALPHAS TOKEN</a></li>
+                <li><a href="#About">GUIDES</a></li>
+            </ul>
+            <ul class="footer-actions">
+                <li><button>Swap ALPHAS Coin</button></li>
+                <li><button>Buy ETH with fiat</button></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            
+            <img src=" ">
+            <img src=" ">
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 ALPHAS. All Rights Reserved.</p>
+            <p>Privacy Policy - Terms and Conditions</p>
+            <p>ALPHAS coin is not an investment and created as a meme. It has no intrinsic value or expectations of financial return. ALPHAS coin makes no promises and is not responsible for any losses or errors. Use at your own risk.</p>
+        </div>
+        </div>
+   
+</footer>
+
+
+</html>

@@ -1,0 +1,537 @@
+
+<!doctype html>
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <meta charset="UTF-8">
+
+    <title>ALPHAS</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const clickableImages = document.querySelectorAll('[data-clickable]');
+
+    clickableImages.forEach(img => {
+        img.addEventListener('click', function() {
+            const targetUrl = img.getAttribute('data-href');
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            }
+        });
+    });
+});
+
+</script>
+<script>
+    $(document).ready(function(){
+        // For Phase 1
+        $('.roadmap-item:nth-child(1)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase1.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+    
+        // For Phase 2
+        $('.roadmap-item:nth-child(2)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase2.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+            // For Phase 3
+            $('.roadmap-item:nth-child(3)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase3.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+    
+        // For Phase 4
+        $('.roadmap-item:nth-child(4)').hover(function(){
+            $('#Roadmap').css('background-image', 'url(/img/Roadmap/Phase4.png)');
+        }, function(){
+            $('#Roadmap').css('background-image', '');
+        });
+        // Repeat for other phases...
+    });
+    </script>
+    
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="#" class="logo">
+            <img src="/img/Alphas-logo-2.webp" alt="ALPHAS 标志" width="150">  <!-- 调整宽度 -->
+        </a>
+        <div class="menu-toggle" id="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <div class="nav-desk" id="desktop-menu">
+            <ul>
+                <li><a href="#">主页</a></li>
+                <li><a href="#About">关于</a></li>
+                <li><a href="#Tokenomics">Tokenomic</a></li>
+                <li><a href="#Roadmap">路线图</a></li>
+                <li><a href="#Charity">慈善</a></li>
+                <li><a href="#Contact">联系方式</a></li>
+                <div class="translate-btn">
+                    <span class="flag flag-zh-ch"></span> ZH-CH
+                    <div class="languages-overlay">
+                      
+                        <a href="#" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+                        <a href="/index.html" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                    </div>
+                </div>
+               
+                <div class="music-controls">
+                    <button id="playMusic" title="播放音乐" hidden>
+                        <i class="fa fa-play"></i>
+                    </button>
+                    <button id="pauseMusic" title="暂停音乐">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay">
+        <ul class="overlay-nav">
+            <li><a href="#home">主页</a></li>
+            <li><a href="#About">关于</a></li>
+            <li><a href="#Tokenomics">Tokenomic</a></li>
+            <li><a href="#Roadmap">路线图</a></li>
+            <li><a href="#Charity">慈善</a></li>
+            <li><a href="#Contact">联系方式</a></li>
+        </ul>
+    </div>
+
+
+    <section id="home" >
+
+       
+        <img src="/img/Paralax/mountains_behind.webp" id="mountains_behind">
+        <img src="/img/Paralax/stars.png" id="stars">
+        <img src="/img/Paralax/moon.webp" id="moon">   
+        <img src="/img/Paralax/Gajah2.webp" id="gajah">
+        <img src="/img/Paralax//Ella-Solo.webp" id="Ella_Solo">
+        <img src="/img/Paralax/Logo.webp" id="logo1">
+     <!--   <img src="/img/Paralax/mountains_front.webp" id="mountains_front"> -->
+        <img src="/img/Paralax/mountains_front-2.png" id="mountains_front">
+        <h2 id="text"></h2>
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xbd6a95ff59b502b891046efd0990c59a0d1ed0b8" id="btn">DexTools</a>
+        <a href="#sec" id="btn2">启动应用</a>
+
+
+
+
+<a href="#About" class="bouncing-arrow-container" id="bouncing-arrow-container">
+    <div class="bouncing-circle"></div>
+    <div class="bouncing-arrow"></div>
+</a>
+
+
+    </section>
+    
+
+     <!-- As seen marquee -->
+     <div class="social-icons">
+        <a href="https://twitter.com/AlphasElephant" target="_blank"><img src="/img/icons/Twitter.png" alt="Twitter Icon"></a><br>
+        <a href="https://t.me/AlphasElephant" target="_blank"><img src="/img/icons/Telegram.png" alt="Telegram Icon"></a><br>
+
+    </div>
+    
+    <div class="as-seen-in" id="About">
+        <h1>如何查看</h1>
+        <div class="marquee">
+            <div class="logos">
+                <img src="/img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                <!-- Repeat logos for continuous effect -->
+                <img src="/img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                <!-- Repeat logos for continuous effect -->
+                <img src="/img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+                <!-- Repeat logos for continuous effect -->
+                <img src="/img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
+                <img src="/img/News/Dextools-blur.png" alt="dextools">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="About">
+        
+        <div class="about-content">
+            <video class="bg-video" preload="auto" loop muted>
+                <source src="/Andrew-story.mp4" type="video/mp4">
+                您的浏览器不支持视频标签。
+            </video>
+
+            <h2>关于</h2>
+            <h1>ALPHA's 的愿景背后的旅程</h1>
+            <p>为了让您了解我的动机并能够分享我的愿景，我需要告诉您我的故事以及我的旅程是如何开始的。我最初必须采取的步骤与我不得不采取的任何第一步一样困难。那第一步是远离永恒的边缘的一步...</p>
+            <a href="about-cn.html" class="btn">阅读更多</a>
+        </div>
+        
+        <div class="about-image">
+            <img class="under" src="/img/3.webp" alt="Description of the image">
+        </div>
+        
+    </div>
+    <div class="getting-started" id="getting-started">
+        
+        <h2>开始入门</h2>
+        <div class="content-wrapper">
+        <div class="getting-started-content">
+            
+            <h1>选择您的钱包</h1>
+            <p>开始使用ALPHAS TOKEN需要一个安全的数字钱包。这些应用程序将储存您的代币并确保交易安全。</p>
+            <a href="/Cn/Recommended-Wallets-cn.html" class="btn">推荐的钱包</a> 
+        </div>
+        <div class="getting-started-content">
+            
+            <h1>配置您的钱包</h1>
+            <p>设置好您选择的钱包后，您可以安全地储存$ALPHAS并通过质押赚取被动收入。</p>
+            <a href="/Cn/Wallets-guide-cn.html" class="btn">钱包指南</a>
+        </div>
+        <div class="getting-started-content">
+            
+            <h1>获得一些$ALPHAS</h1>
+            <p>准备深入了解ALPHAS TOKEN的世界吗？您可以通过uniswap购买$ALPHAS。</p>
+            <a href="/Cn/buy-cn.html" class="btn">现在购买$APLHA</a>   
+        </div>
+    </div>
+
+    </div>
+
+
+<!-- Utility Section -->
+
+<div class="utilities-slider">
+    <h1>实用性</h1>
+    <h2>ALPHAS 生态系统</h2>    
+    <div class="utility-row"> 
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+            <div class="slide-img">
+                <img class="slide-logo" src="/img/Utility/Staking-utility-logo.webp" alt="Utility" />
+                <img class="front-image" src="/img/Utility/Staking-utility-front.webp" alt="Utility" />
+                <img class="bg-image" src="/img/Utility/Staking-utility.webp" alt="Utility" />
+              </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Utility Box 2 -->
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+                <div class="slide-img">
+                    <img data-clickable data-href="/Cn/lottery-cn.html" class="slide-logo" src="/img/Utility/Lottery-utility-logo.webp" alt="Utility" />
+                    <img data-clickable data-href="/Cn/lottery-cn.html" class="front-image" src="/img/Utility/Lottery-utility-front.webp" alt="Utility" />
+                    <img data-clickable data-href="/Cn/lottery-cn.html" class="bg-image" src="/img/Utility/Lottery-utility.webp" alt="Utility" />
+                </div>
+                
+                  </div>
+        </div>
+    </div>
+
+    <!-- Utility Box 3 -->
+    <div class="utility-box">
+        <div class="utility-frame">
+            <div class="utility-content">
+                <div class="slide-img">
+                    <img class="slide-logo" src="/img/Utility/Alphas Sanctuary-logo.webp" alt="Utility" />
+                    <img class="front-image" src="/img/Utility/Alphas Sanctuary-utility-front.webp" alt="Utility" />
+                    <img class="bg-image" src="/img/Utility/Alphas Sanctuary-utility.webp" alt="Utility" />
+                  </div>
+                  </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+
+    <!-- Add more utility boxes as per your requirement -->
+
+
+
+
+
+
+<!-- Tokenomic Section -->
+<div class="tokenomic-section" id="Tokenomics">
+    <h2>代币经济学 (Tokenomics)</h2>
+    <div class="token-details">
+        <div class="token-box">
+            <h3>代币供应量</h3>
+            <p>1,000,000,000,000 ALPHAS</p>
+        </div>
+        <div class="token-box">
+            <h3>购买税</h3>
+            <p>2%</p>
+        </div>
+        <div class="token-box">
+            <h3>销售税</h3>
+            <p>3%</p>
+        </div>
+        <div class="token-box">
+            <h3>已销毁的代币</h3>
+            <p>0 ALPHAS</p>
+        </div>
+    </div>
+    <div class="tax-use">
+        <h3>税收的用途是什么？</h3>
+        <p>当你购买ALPHAS代币，2%用于营销。当你卖出，我们分税：1%捐给慈善，1%用于我们的代币持有者的抽奖，1%被销毁以维持代币的价值...</p>
+    </div>
+    <div class="pie-chart-container">
+        <img src="/piechart-tokenomic.png" alt="ALPHAS LOGO">
+        <div class="piechart-box">
+            <h3>供应细分</h3>
+            <ul>
+                <li>40%在Uniswap上进行交易。</li>
+                <li>20%留给其他交易所。</li>
+                <li>10%被销毁以保持代币价值。</li>
+                <li>30%用于那些质押代币并获得奖励的人。</li>
+            </ul>
+        </div>
+    </div>
+    <div class="extra-boxes">
+        <div class="token-box">
+            <h3>审计</h3>
+            <p>关于审计、安全检查及其结果的详情。</p>
+            <button class="box-button">查看审计</button>
+        </div>
+        <div class="token-box">
+            <h3>投票</h3>
+            <p>参与治理投票和决策。</p>
+            <button class="earn-button">投票</button>
+        </div>
+    </div>
+    <div class="earn-section">
+        <h3>开始赚钱</h3>
+        <p>通过质押ALPHAS代币并成为我们社区的活跃成员来赚钱。</p>
+        <button class="earn-button">开始赚钱</button>
+    </div>
+</div>
+
+
+
+<!-- Roadmap Section -->
+<div class="roadmap-section" id="Roadmap">
+    <h2 class="roadmap-title">我们的路线图</h2>
+
+    <div class="roadmap-wrapper">
+
+        <div class="roadmap-content">
+            <!-- 阶段 1 -->
+           
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>阶段 1</h3>
+                </div>
+                    <li>项目启动</li>
+                    <li>Alpha团队组建</li>
+                    <li>网站上线</li>
+                    <li>准备社交媒体</li>
+                    <li>合同安全审计</li>
+                    <li>白皮书发布</li>
+            </div>
+
+            <!-- 阶段 2 -->
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>阶段 2</h3>
+                </div>
+                    <li>秘密发布</li>
+                    <li>2500+ 持有者</li>
+                    <li>CMC & CG上市</li>
+                    <li>Certik审计</li>
+                    <li>趋势</li>
+                    <li>Dapp 功能: 质押、销毁、换币</li>
+                    <li>彩票功能</li>
+                    <li>CEX上市</li>
+            </div>
+
+            <!-- 阶段 3 -->
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>阶段 3</h3>
+                </div>
+                    <li>5000+ 持有者</li>
+                    <li>进一步的市场营销努力</li>
+                    <li>惊喜功能</li>
+                    <li>额外的合作伙伴关系和合作</li>
+                    <li>社区治理和投票系统</li>
+            </div>
+            
+            <!-- 阶段 4 -->
+            <div class="roadmap-item">
+                <div class="roadmap-header">
+                    <div class="roadmap-circle"></div>
+                    <h3>阶段 4</h3>
+                </div>
+                    <li>10,000+ 持有者</li>
+                    <li>进一步的CEX上市</li>
+                    <li>功能扩展</li>
+                    <li>定期的社区活动和AMA</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 慈善部分 -->
+<div class="charity-section" id="Charity">
+    <h2>ALPHAS TOKEN 对大象的承诺</h2>
+    <p>我们的核心理念超越了金融增长的领域。ALPHAS TOKEN的核心是致力于保护雄伟的大象。我们反对残忍的偷猎行为，誓言为那些被孤立和受害的大象做出改变。</p>
+
+    <!-- 可放置一个小象的图片或象征保护的插图 -->
+
+    <!-- 使命亮点 -->
+    <div class="charity-slider">
+        <div class="slide">
+            <h3>保护</h3>
+            <p>打击象牙偷猎</p>
+        </div>
+        <div class="slide">
+            <h3>支持</h3>
+            <p>支援孤立的幼象</p>
+        </div>
+        <div class="slide">
+            <h3>合作</h3>
+            <p>与多个保护区携手合作</p>
+        </div>
+    </div>
+
+    <p>我们致力于将我们的成功引导到正确的事业和保护区，确保我们的贡献产生真正的影响。随着我们的发展，我们始终欢迎与关注大象福利的各种保护区和组织合作。</p>
+
+    <!-- 行动召唤 -->
+    <a href="buy.html" class="charity-cta">加入我们的崇高事业</a>
+</div>
+
+
+
+<!-- 常见问题部分 -->
+
+<div class="Contact" id="Contact">  
+
+<div class="Contact-section">
+    <h3>取得联系</h3>
+    <p>与我们合作，提出建议，获取支持！</p>
+    <button class="contact-button">联系我们</button>
+</div>
+
+</div>
+
+
+<div class="faq-container" id="FAQ">
+   
+    <!-- 常见问题手风琴 -->
+    <div class="faq-section">
+        <h2>常见问题</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">什么是ALPHA Token？</h3>
+            <p class="faq-answer">ALPHA Token是一个由社区驱动的加密货币项目，旨在使所有参与者受益。该项目旨在通过提供透明度和以社区为中心的方法来改变加密货币的叙述。</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">ALPHA Token的创始人是谁？</h3>
+            <p class="faq-answer">ALPHA Token是由来自爱荷华州的小镇的有远见的人Andrew Fisher创建的。从卑微的起点到成为一个加密货币的远见者，这个旅程在塑造ALPHA Token的愿景中起到了重要的作用。</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">费用是多少？</h3>
+            <p class="faq-answer">对于每次购买，2%用于市场营销。销售时，1%指定给慈善机构，1%给抽奖，1%用于销毁。</p>
+        </div>
+        <!-- 根据需要添加更多的常见问题项 -->
+    </div>
+</div>
+
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>欢迎来到ALPHAS</h2>
+      <p>您想进入背景音乐吗？</p>
+      <button1 id="withMusic">是的，有音乐</button1>
+      <button1 id="withoutMusic">不，没有音乐</button1>
+    </div>
+</div>
+<audio id="backgroundMusic" loop>
+    <source src="alphasmusic.mp3" type="audio/mpeg">
+    您的浏览器不支持音频元素。
+</audio>
+
+</body>
+
+<footer>
+    <div class="footer-content" id="Footer">
+        <div class="footer-logo">
+            <img src="/img/ALPHAS-LOGO .webp" alt="ALPHAS LOGO">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#About">关于</a></li>
+                <li><a href="#FAQ">帮助</a></li>
+            </ul>
+            <ul>
+                <li><a href="#Contact">联系</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="#About">ALPHAS TOKEN</a></li>
+                <li><a href="#About">指南</a></li>
+            </ul>
+            <ul class="footer-actions">
+                <li><button>兑换 ALPHAS 币</button></li>
+                <li><button>用法币购买ETH</button></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <!-- 在此处添加您的社交图标 -->
+            <img src=" ">
+            <img src=" ">
+        </div>
+        
+        <div class="footer-bottom">
+            <p>版权所有 &copy; 2023 ALPHAS。保留所有权利。</p>
+            <p>隐私政策 - 条款和条件</p>
+            <p>ALPHAS币不是投资，并作为一个梗被创建。它没有固有的价值或财务回报的期望。ALPHAS币不作任何承诺，不对任何损失或错误负责。自行承担风险使用。</p>
+        </div>
+    </div>
+</footer>
+
+
+
+</html>

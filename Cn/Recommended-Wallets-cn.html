@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ALPHA</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta charset="UTF-8">
+        
+    </head>
+    
+    <body>
+    
+        <header class="sticky-header">
+            <a href="#" class="logo">
+                <img src="/img/Alphas-logo-2.webp" alt="ALPHAS 标志" width="150">  <!-- 调整宽度 -->
+            </a>
+            <div class="menu-toggle" id="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        
+            <div class="nav-desk" id="desktop-menu">
+                <ul>
+                    <li><a href="/Cn/index-cn.html">主页</a></li>
+                    <li><a href="/Cn/index-cn.html#About">关于</a></li>
+                    <li><a href="/Cn/index-cn.html#Tokenomics">Tokenomic</a></li>
+                    <li><a href="/Cn/index-cn.html#Roadmap">路线图</a></li>
+                    <li><a href="/Cn/index-cn.html#Charity">慈善</a></li>
+                    <li><a href="/Cn/index-cn.html#Contact">联系方式</a></li>
+                    <div class="translate-btn">
+                        <span class="flag flag-zh-ch"></span> ZH-CH
+                        <div class="languages-overlay">
+                          
+                            <a href="#" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+                            <a href="/Recommended-Wallets.html" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                        </div>
+                    </div>
+                   
+                    <div class="music-controls">
+                        <button id="playMusic" title="播放音乐" hidden>
+                            <i class="fa fa-play"></i>
+                        </button>
+                        <button id="pauseMusic" title="暂停音乐">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </header>
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay">
+        <ul class="overlay-nav">
+            <li><a href="/Cn/index-cn.html">主页</a></li>
+            <li><a href="/Cn/index-cn.html#About">关于</a></li>
+            <li><a href="/Cn/index-cn.html#Tokenomics">Tokenomic</a></li>
+            <li><a href="/Cn/index-cn.html#Charity">慈善</a></li>
+            <li><a href="/Cn/index-cn.html#Contact">联系方式</a></li>
+        </ul>
+    </div>
+    
+    <div class="title">
+        <h1>推荐的钱包</h1>
+        <a href="#" onclick="history.back()" class="back-link">&lt; 返回</a>
+        — 
+        <b>推荐的钱包</b>
+    </div>
+    
+    <div class="article">
+        <div class="article-content">
+            <!-- Main Heading -->
+            <h1>为 ALPHAS 代币推荐的钱包</h1>
+            
+            <!-- Subheading/Description -->
+            <p>ALPHAS 是一个居于以太坊区块链上的 ERC20 代币。为了安全地存储和管理你的 ALPHAS 代币，使用兼容的钱包非常关键。这是我们的首选：</p>
+    
+            <ul>
+                <li><b>MetaMask</b>：一个流行的基于浏览器的钱包，使用起来非常简单。它可以无缝集成到大多数 web3 平台。</li>
+            </ul>
+    
+            <div class="metamask-instructions">
+                <h2>如何安装 MetaMask:</h2>
+                <div class="tabs">
+                    <button class="tab" onclick="showContent('browser')">浏览器扩展</button>
+                    <button class="tab" onclick="showContent('mobile')">移动应用</button>
+                </div>
+            
+                <div id="browser" class="tab-content">
+                    <div class="dropdowns">
+                        <button onclick="showDropdown('browserChrome')">Chrome</button>
+                        <button onclick="showDropdown('browserFirefox')">Firefox</button>
+                        <button onclick="showDropdown('browserEdge')">Edge</button>
+                    </div>
+                    
+                    <div id="browserChrome" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>访问 <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                            <li>点击菜单栏中的"下载"。</li>
+                            <li>点击“为 Chrome 安装 MetaMask”。您将被引导到 Chrome 网上应用店。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914368739099" alt="MetaMask Chrome 网上应用店" class="metamask-instructions-img">
+                            
+                            <li>安装 MetaMask Chrome 扩展</li>
+                            <li>点击“添加到 Chrome”。</li>
+                            <li>在弹出的窗口中点击“添加扩展”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914368713115" alt="添加 MetaMask 扩展" class="metamask-instructions-img">
+                            
+                            <li>添加 MetaMask 扩展后，MetaMask 会自动打开。你还可以通过点击屏幕右上角的拼图图标，并点击固定图标，确保它在工具栏中轻松访问。</li>
+                        </ol>
+                    </div>
+    
+                    <div id="browserFirefox" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>访问 <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                            <li>在菜单栏中点击"下载"。</li>
+                            <li>选择“为 Firefox 安装 MetaMask”。您将被重定向到 Firefox 浏览器的附加组件商店。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914790810139" alt="MetaMask Firefox 附加组件商店" class="metamask-instructions-img">
+                            
+                            <li>点击“添加到 Firefox”。</li>
+                            <li>在出现的弹出窗口中点击“添加”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914739324187" alt="在 Firefox 中添加 MetaMask" class="metamask-instructions-img">
+                            
+                            <li>安装完毕后，MetaMask 将自动打开。点击屏幕右上角的 MetaMask 狐狸图标以随时访问。</li>
+                        </ol>
+                    </div>
+    
+                    <div id="browserEdge" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>访问 <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                            <li>在菜单栏中点击"下载"。</li>
+                            <li>选择“为 Edge 安装 MetaMask”。您将被引导到 Microsoft Edge 附加组件商店。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9915320203291" alt="MetaMask Edge 附加组件商店" class="metamask-instructions-img">
+                            
+                            <li>点击“获取”以在 Edge 中添加 MetaMask。</li>
+                            <li>安装完毕后点击“启动”开始使用 MetaMask。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9915303914395" alt="在 Edge 上启动 MetaMask" class="metamask-instructions-img">
+                            
+                            <li>MetaMask 现在作为您的 Edge 浏览器的扩展可用。点击右上角的狐狸图标以随时访问它。</li>
+                        </ol>
+                    </div>
+    
+                    
+                    <div id="browserFirefox" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>访问 <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                            <li>点击“下载”。</li>
+                            <li>选择“为 Firefox 安装 MetaMask”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914790810139" alt="MetaMask Firefox 扩展" class="metamask-instructions-img">
+                            
+                            <li>在新窗口中，点击“添加到 Firefox”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9914739324187" alt="在 Firefox 中添加 MetaMask" class="metamask-instructions-img">
+                            
+                            <li>安装完MetaMask扩展后，你会返回浏览器页面。MetaMask会出现在你的浏览器上；点击它以打开 MetaMask。</li>
+                        </ol>
+                    </div>
+    
+                    <div id="browserEdge" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>访问 <a href="https://metamask.io/" target="_blank">metamask.io</a></li>
+                            <li>点击“下载”。</li>
+                            <li>选择“为 Edge 安装 MetaMask”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9915320203291" alt="MetaMask Edge 扩展" class="metamask-instructions-img">
+    
+                            <li>在新窗口中，点击“获取”。</li>
+                            <img src="https://support.metamask.io/hc/article_attachments/9915303914395" alt="在 Edge 中添加 MetaMask" class="metamask-instructions-img">
+                            
+                            <li>安装完 MetaMask 扩展后，MetaMask 会自动打开。你也可以通过点击屏幕右上角的拼图图标，点击 MetaMask 扩展旁边的3个点，并选择“显示在工具栏”以确保它在工具栏中轻松访问。</li>
+                        </ol>
+                    </div>
+    
+                </div>
+    
+                <div id="mobile" class="tab-content" style="display: none;">
+                    <p>首先：请确保只从适用于您的设备/操作系统的官方应用商店下载 MetaMask。有一些克隆版本的 MetaMask 会记录您的秘密恢复短语。为了避免成为这些骗局的受害者，请确保只从您设备上的应用商店下载官方的 MetaMask 应用程序，而不是从任何其他来源下载。</p>
+    
+                    <div class="dropdowns">
+                        <button onclick="showDropdown('iOS')">iOS</button>
+                        <button onclick="showDropdown('Android')">Android</button>
+                    </div>
+                    
+                    <div id="iOS" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>
+                                <p>打开 App Store 并点击右下角的搜索按钮。输入 MetaMask 到搜索栏。</p>
+                                <img src="https://support.metamask.io/hc/article_attachments/9915602462491" alt="App Store 上的 MetaMask" width="300" height="200" class="metamask-instructions-img">
+                            </li>
+                            <li>
+                                <h3>安装 MetaMask iOS</h3>
+                                <p>点击“获取”或点击应用的名称以查看更多详情。完成常规的 App Store 下载确认过程。</p>
+                            </li>
+                            <li>
+                                <p>安装完后，打开应用并按提示创建您的钱包。</p>
+                                <p><strong>确保在安全且离线的地方备份您的秘密恢复短语！</strong></p>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div id="Android" class="dropdown-content" style="display: none;">
+                        <ol>
+                            <li>
+                                <p>打开 Play 商店并搜索“MetaMask”。正式的 MetaMask 应用看起来像下面的屏幕截图。非常小心不要安装假的 MetaMask 应用！寻找一个有 10M+ 下载量的应用。</p>
+    
+                                <img src="https://support.metamask.io/hc/article_attachments/9915891139227" alt="Play 商店上的 MetaMask" width="300" height="200" class="metamask-instructions-img"> 
+                            </li>
+                            <li>
+                                <h3>安装 MetaMask Android</h3>
+                                <p>点击'安装'并等待过程完成。</p>
+                            </li>
+                            <li>
+                                <p>安装完后，打开应用并按提示创建您的钱包。</p>
+                                <p><strong>确保在安全且离线的地方备份您的秘密恢复短语！</strong></p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function showContent(tab) {
+        // Hide all tab contents
+        document.getElementById('browser').style.display = 'none';
+        document.getElementById('mobile').style.display = 'none';
+
+        // Remove selected class from all tabs
+        document.querySelector('.tab.selected')?.classList.remove('selected');
+
+        // Show the selected content
+        if (tab === 'browser') {
+            document.getElementById('browser').style.display = 'block';
+            document.querySelector('button[onclick="showContent(\'browser\')"]').classList.add('selected');
+        } else if (tab === 'mobile') {
+            document.getElementById('mobile').style.display = 'block';
+            document.querySelector('button[onclick="showContent(\'mobile\')"]').classList.add('selected');
+        }
+    }
+    
+    function showDropdown(os) {
+    // For mobile
+    const ios = document.getElementById('iOS');
+    const android = document.getElementById('Android');
+
+    // For browser
+    const chrome = document.getElementById('browserChrome');
+    const firefox = document.getElementById('browserFirefox');
+    const edge = document.getElementById('browserEdge');
+
+    // Hide all dropdowns first
+    ios.style.display = 'none';
+    android.style.display = 'none';
+    chrome.style.display = 'none';
+    firefox.style.display = 'none';
+    edge.style.display = 'none';
+
+    // Remove .selected class from all dropdown buttons
+    document.querySelectorAll('.dropdowns button').forEach(btn => btn.classList.remove('selected'));
+
+    // Show the selected dropdown and add .selected class to the corresponding button
+    switch (os) {
+        case 'iOS':
+            ios.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'iOS\')"]').classList.add('selected');
+            break;
+        case 'Android':
+            android.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'Android\')"]').classList.add('selected');
+            break;
+        case 'browserChrome':
+            chrome.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserChrome\')"]').classList.add('selected');
+            break;
+        case 'browserFirefox':
+            firefox.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserFirefox\')"]').classList.add('selected');
+            break;
+        case 'browserEdge':
+            edge.style.display = 'block';
+            document.querySelector('button[onclick="showDropdown(\'browserEdge\')"]').classList.add('selected');
+            break;
+    }
+}
+
+    </script>
+    
+            
+            <style>
+
+                .selected {
+                background-color: #00FFFF;  /* Light cyan color */
+                color: #000;                /* Text color for contrast */
+                box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.8); /* Cyan glow effect */
+                transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+                }
+
+
+                .metamask-instructions {
+                    border: 1px solid #dcdcdc;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+                }
+                .metamask-instructions-img{
+                    width: 60%;
+                    height: 60%;
+                }
+                @media only screen and (max-width: 768px) {
+                .metamask-instructions-img{
+                      width: 107%;
+                      height: 85%;
+                  }
+                }
+                .tabs .tab {
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    transition: background-color 0.3s;
+                }
+                
+                .tabs .tab:hover {
+                    background-color: #f9f9f9;
+                }
+            
+                .tab-content, .dropdown-content {
+                    padding: 20px;
+                    margin-top: 20px;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 5px;
+                    color: white;
+                }
+            
+                .dropdowns button {
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    transition: background-color 0.3s;
+                }
+            
+                .dropdowns button:hover {
+                    background-color: #f9f9f9;
+                }
+            </style>
+            
+
+<!-- FAQ Section -->
+
+<div class="Contact" id="Contact">  
+
+
+</div>
+
+
+    
+</body>
+
+<footer>
+    <div class="footer-content" id="Footer">
+        <div class="footer-logo">
+            <img src="/img/ALPHAS-LOGO .webp" alt="ALPHAS LOGO">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="/Cn/index-cn.html#About">关于</a></li>
+                <li><a href="/Cn/index-cn.html#FAQ">帮助</a></li>
+            </ul>
+            <ul>
+                <li><a href="/Cn/index-cn.html#Contact">联系</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="/Cn/index-cn.html#About">ALPHAS TOKEN</a></li>
+                <li><a href="/Cn/index-cn.html#About">指南</a></li>
+            </ul>
+            <ul class="footer-actions">
+                <li><button>兑换 ALPHAS 币</button></li>
+                <li><button>用法币购买ETH</button></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <!-- 在此处添加您的社交图标 -->
+            <img src=" ">
+            <img src=" ">
+        </div>
+        
+        <div class="footer-bottom">
+            <p>版权所有 &copy; 2023 ALPHAS。保留所有权利。</p>
+            <p>隐私政策 - 条款和条件</p>
+            <p>ALPHAS币不是投资，并作为一个梗被创建。它没有固有的价值或财务回报的期望。ALPHAS币不作任何承诺，不对任何损失或错误负责。自行承担风险使用。</p>
+        </div>
+    </div>
+</footer>
+
+
+</html>
