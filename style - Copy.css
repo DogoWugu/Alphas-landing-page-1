@@ -2162,10 +2162,13 @@ footer {
         padding: 25px;
     }
 }
-body {
-    background-color: greyishblack; /* Replace with your actual color */
-    color: white;
-    font-family: Arial, sans-serif;
+
+
+.article {
+    display: flex;
+    justify-content: center;
+   
+    height: 100%;
 }
 
 .contact-form-container {
@@ -2175,7 +2178,6 @@ body {
     width: 100%;
     max-width: 500px; /* Maximum width of the form */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    justify-content: center; 
 }
 
 .contact-form-container h1 {
@@ -2217,30 +2219,4 @@ body {
 
 .contact-form-container button:hover {
     background-color: #FFF5E1;
-}
-
-.contact-section {
-    display: flex; 
-    justify-content: flex-start;
-    align-items: flex-start;  /* Align content to the top */
-    justify-content: space-around;
-    position: relative;
-    padding: 150px;
-    padding-top: 30px;
-    background: #19181A;
-    padding-bottom: inherit;
-}
-
-.contact-section .contact-section-content {   
-    width: 90%;  /* Takes full width of its container */
-    padding-right: 60px;
-    margin-bottom: 20px; 
-    text-align: left;
-}
-
-@media only screen and (max-width: 768px) {
-    .contact-section {
-        padding: 0px;
-    }
-
 }

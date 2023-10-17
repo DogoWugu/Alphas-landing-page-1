@@ -5,7 +5,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                 <li><a href="index.html#About">About</a></li>
                 <li><a href="index.html#Tokenomics">Tokenomic</a></li>
                 <li><a href="index.html#Charity">Charity</a></li>
-                <li><a href="index.html#Contact">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
                 <div class="translate-btn">
                     <span class="flag flag-en"></span> EN
                     <div class="languages-overlay">
@@ -47,7 +48,7 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Tokenomics">Tokenomic</a></li>
             <li><a href="#Charity">Charity</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
     </div>
 
@@ -58,14 +59,20 @@
         <b>Contact</b>
     </div>
     
-    <div class="article">
-        <div class="article-content">
-            <!-- Main Heading -->
-            <h1>Coming Soon</h1>
-            
-
-        </div>
+    <div class="contact-section">
+        <form action="https://formsubmit.co/alphaselephant@yahoo.com" method="POST" class="contact-form-container">
+            <h1>Contact us</h1>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </div>
+        
+
+
+
+
     
 
 
@@ -87,24 +94,24 @@
         </div>
         <div class="footer-links">
             <ul>
-                <li><a href="index.html#About">ABOUT</a></li>
+                <li><a href="#About">ABOUT</a></li>
                 <li><a href="#FAQ">HELP</a></li>
             </ul>
             <ul>
-                <li><a href="index.html#Contact">CONTACT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
                 
             </ul>
             <ul>
-                <li><a href="index.html#About">ALPHAS TOKEN</a></li>
-                <li><a href="index.html#About">GUIDES</a></li>
+                <li><a href="#About">ALPHAS TOKEN</a></li>
+                <li><a href="#About">GUIDES</a></li>
             </ul>
             <ul class="footer-actions">
-                <li><button>Swap ALPHAS Coin</button></li>
-                <li><button>Buy ETH with fiat</button></li>
+                <li><a href="https://alphaselephant.app/" class="earn-button">Swap ALPHAS Coin</a></li>
+                <li><a href="buy.html" class="earn-button">Buy ETH with fiat</a></li>
             </ul>
         </div>
         <div class="footer-socials">
-            <!-- Add your social icons here -->
+            
             <img src=" ">
             <img src=" ">
         </div>
