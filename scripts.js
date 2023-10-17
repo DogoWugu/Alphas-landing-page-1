@@ -161,52 +161,6 @@ faqItems.forEach(item => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var ctx = document.getElementById('tokenomicsPieChart').getContext('2d');
-
-    var data = {
-        labels: ['CEX', 'Burn', 'Stake', 'Uniswap'],
-        datasets: [{
-            data: [20, 10, 30, 40],  // Adjust these values to your specific percentages
-            backgroundColor: ['#B0B0B0', '#707070', '#E5E5E5', '#2E2E2E'], // Updated Colors
-            borderColor: ['#FFFFFF'],
-            borderWidth: 1
-        }]
-    };
-    
-    var options = {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top',
-                labels: {
-                    color: 'white'   // Changed from fontColor to color
-                }
-            },
-            title: {
-                display: true,
-                text: 'Tokenomics Distribution',
-                color: 'white'   // Changed from fontColor to color
-            }
-        },
-        animation: {
-            animateScale: true,
-            animateRotate: true
-        },
-        tooltips: {
-            titleColor: 'white',
-            bodyColor: 'white'
-        }
-    };
-    
-    new Chart(ctx, {
-        type: 'pie',
-        data: data,
-        options: options
-    });
-    
-});
-
 $(document).ready(function() {
     $('.about').hover(
         function() { // Mouse enter
@@ -273,6 +227,8 @@ function playMusic() {
         music.appendChild(source);
         document.body.appendChild(music);
     }
+    // SET MUSIC VOLUME
+    music.volume = 0.3;
 
     // Play the music
     let playPromise = music.play();

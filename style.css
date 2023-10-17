@@ -1056,7 +1056,7 @@ section img#mountains_front
 
 /* About - Image Styles */
 .About .about-image .under {
-    max-width: 250px; /* Makes sure the image doesn't overflow its container */
+    max-width: 325px; /* Makes sure the image doesn't overflow its container */
     height: auto; /* Keeps the aspect ratio */
 }
 
@@ -1380,6 +1380,10 @@ section img#mountains_front
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 .earn-button:hover {
@@ -2022,6 +2026,10 @@ footer {
     padding: 150px 0;
     font-family: Arial, sans-serif; /* or your preferred font */
     padding:150px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 
@@ -2043,7 +2051,10 @@ footer {
 }
 
 .footer-links {
-    
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -2053,6 +2064,10 @@ footer {
     
     list-style-type: none;
     padding: 0;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 .footer-links a {
@@ -2060,7 +2075,14 @@ footer {
     color: #ffffff;
     display: block;
     margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    
 }
+
+
 
 .footer-links a:hover {
     text-decoration: underline;
