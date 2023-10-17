@@ -18,11 +18,11 @@ html {
 
 button a {
     text-decoration: none;
-    color: inherit;  
+    color: inherit;  /* to ensure the link color matches the button text color */
 }
 
 button a:hover {
-    text-decoration: underline; 
+    text-decoration: underline; /* or any other effect you want on hover */
 }
 
 .modal {
@@ -39,16 +39,16 @@ button a:hover {
 
 .modal-content {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    gap: 10px;              
+    flex-direction: column; /* this makes it a flex container */
+    align-items: center;    /* center the items horizontally */
+    gap: 10px;              /* apply the gap */
 
     color: white;
     background-color: #19181A;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    border-radius: 15px;    
+    border-radius: 15px;    /* rounding the corners */
     width: 300px;
     z-index: 1501;
 }
@@ -59,7 +59,7 @@ button a:hover {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;    /* added gap for better separation from content */
 }
 
 .close:hover,
@@ -69,7 +69,7 @@ button a:hover {
     cursor: pointer;
 }
 
-
+/* Style for the buttons */
 button1 {
     background-image: linear-gradient(120deg, #19181A 0%, #5b5d5e 100%);
     padding: 10px 20px;
@@ -100,13 +100,13 @@ button1:active {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 24px; 
+    font-size: 24px; /* adjust as per need */
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .music-controls button:hover {
-    color: #f0f0f0; 
+    color: #f0f0f0; /* Lighten the icon color on hover */
 }
 
 
@@ -114,7 +114,7 @@ button1:active {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; 
+    background-color: #007bff; /* or any other color you prefer */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -125,8 +125,8 @@ button1:active {
 }
 
 .btn:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 0 15px 5px rgba(0,123,255,0.7); 
+    background-color: #0056b3; /* darken the color on hover */
+    box-shadow: 0 0 15px 5px rgba(0,123,255,0.7); /* Blue glow effect */
 }
 
 .spacer {
@@ -149,7 +149,7 @@ button1:active {
 
 .image-container {
     position: relative;
-    width: max-content; 
+    width: max-content; /* Adapts to the intrinsic width of the content (your image in this case) */
     height: max-content; 
 }
 .flag {
@@ -185,7 +185,7 @@ button1:active {
     background-size: cover;
 }
 
-
+/* Styling for the translation button */
 .translate-btn {
     position: relative;
     display: inline-block;
@@ -202,17 +202,17 @@ button1:active {
     background-color: #19181A;
 }
 
-
+/* Styling for the languages overlay */
 .languages-overlay {
     display: none; 
     position: absolute;
-    top: 100%; 
+    top: 100%; /* Position it right below the button */
     left: 0;
     background-color: #000000;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
-    width: 200px; 
+    z-index: 1000; /* Ensure it appears on top of other elements */
+    width: 200px; /* Optional: Adjust based on your requirements */
 }
 
 .translate-btn:hover .languages-overlay {
@@ -245,17 +245,17 @@ body
     padding: 0;
     box-sizing: border-box;
 }
-
+/* By default, the desktop navigation is displayed */
 .nav-desk {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    width: 100%; /* Take up the full width of its parent */
 }
 
 .nav-desk ul {
     display: flex;
-    gap: 20px; 
+    gap: 20px; /* Spacing between items */
 }
 
 .nav-desk li {
@@ -273,7 +273,7 @@ body
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-
+/* Hide the desktop navigation for mobile devices and show the menu toggle */
 @media only screen and (max-width: 768px) {
     .nav-desk {
         display: none;
@@ -289,15 +289,15 @@ body
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto; 
+    margin-left: auto; /* This pushes the burger menu to the right */
 }
 
 .menu-toggle .bar {
-    background-color: #fff; 
+    background-color: #fff; /* White color for the burger menu */
     height: 3px;
     width: 25px;
     margin: 3px;
-    transition: 0.3s; 
+    transition: 0.3s; /* Smooth transition for animations */
 }
 
 
@@ -307,21 +307,21 @@ body
     }
 
     .nav-list-wrapper.active {
-        max-height: 200px; 
+        max-height: 200px; /* Adjust this value based on the number of menu items */
     }
 }
 .nav-overlay.active {
     display: flex;
 }
 
-
+/* Navigation Overlay Styles */
 .nav-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); 
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     z-index: 10001; 
     display: none;
     justify-content: center;
@@ -344,24 +344,24 @@ body
 }
 
 .nav-overlay ul li a:hover {
-    color: #ff4500; 
+    color: #ff4500; /* Change to your preferred hover color */
 }
 
 .sticky-header {
-    position: -webkit-sticky; 
+    position: -webkit-sticky; /* for Safari */
     position: sticky;
     top: 0;
     top: 0;
     left: 0;
-    right: 0; 
-    padding: 20px 50px; 
+    right: 0; /* added to ensure the navbar spans the full width */
+    padding: 20px 50px; /* reduced side padding for a more spacious look */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4); /* light transparent black for contrast */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
     z-index: 10002;
 }
 
@@ -370,31 +370,31 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0; 
-    padding: 20px 50px; 
+    right: 0; /* added to ensure the navbar spans the full width */
+    padding: 20px 50px; /* reduced side padding for a more spacious look */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4); /* light transparent black for contrast */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
     z-index: 10002;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out; /* for smooth effect when styles change */
 }
 
 header:hover {
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4); /* darken background on hover */
 }
 
 header .logo {
-    display: none; 
+    display: none; /* This hides the logo */
     color: #FFF; 
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 1px; 
+    letter-spacing: 1px; /* reduce spacing for a tighter appearance */
 }
 
 header .logo_article {
@@ -404,7 +404,7 @@ header .logo_article {
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 1px; 
+    letter-spacing: 1px; /* reduce spacing for a tighter appearance */
 }
 
 
@@ -416,7 +416,7 @@ header ul {
 
 header ul li {
     list-style: none;
-    margin-left: 15px; 
+    margin-left: 15px; /* reduced spacing for a more clustered appearance */
 }
 
 header ul li a {
@@ -424,7 +424,7 @@ header ul li a {
     padding: 8px 20px; 
     color: #FFF;
     border-radius: 15px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; 
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* smooth hover transitions */
 }
 
 header ul li a:hover, header ul li a.active {
@@ -492,8 +492,8 @@ section img#mountains_front
     position: absolute;
     cursor: pointer;
     left: 50%;
-    bottom: 10%;  
-    transform: translateX(-50%); 
+    bottom: 10%;  /* Initial position from the bottom */
+    transform: translateX(-50%); /* for horizontal centering */
     width: 90px;
     height: 90px;
     z-index: 9999;
@@ -552,23 +552,23 @@ section img#mountains_front
     }
 }
 
-
+/* Media query for mobile devices with a maximum width of 767px */
 @media (max-width: 767px) {
     .bouncing-arrow-container {
         top: 70%;
     }
 }
 
-
+/* Media query for tablet devices with a minimum width of 768px and a maximum width of 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
     .bouncing-arrow-container {
-        top: 80%; 
+        top: 80%; /* Adjust the top value for tablets */
     }
 }
 
 @media (min-width: 1024px) {
     .bouncing-arrow-container {
-        top: 80%; 
+        top: 80%; /* Adjust the top value for desktop */
     }
 }
 
@@ -581,37 +581,37 @@ section img#mountains_front
     border-radius: 40px;
     font-size: 1.5em;
     transform: translateY(100px);
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;  /* Smooth transition for hover effects */
     
 }
 
 #btn {
-    background-color: #19181A;   
-    color: #fff;   
-    margin-right: 10px;  
+    background-color: #19181A;   /* Darker background for DexTools */
+    color: #fff;   /* White text */
+    margin-right: 10px;  /* Space between the buttons */
 }
 
 #btn2 {
-    background-color: #fff;  
-    border: 2px solid #19181A;  
-    color: #000000;  
+    background-color: #fff;  /* White background for Launch app */
+    border: 2px solid #19181A;  /* Border color */
+    color: #000000;  /* Text color */
 }
 
 #btn:hover {
-    background-color: #616163;   
-    color: #fff;   
+    background-color: #616163;   /* Slightly lighter on hover for DexTools */
+    color: #fff;   /* White text */
 }
 
 #btn2:hover {
-    background-color: #f7f7f7;   
-    border-color: #3c2166;  
-    color: #2b1055;  
+    background-color: #f7f7f7;   /* Slightly darker white on hover for Launch app */
+    border-color: #3c2166;  /* Darker border on hover */
+    color: #2b1055;  /* Text color */
 }
 
 
 #btn, #btn2 {
-    z-index: 20;  
-    position: relative; 
+    z-index: 20;  /* This z-index is higher, ensuring the buttons are above the mountain image */
+    position: relative; /* Ensures z-index works properly */
 }
 
 .parallax-section #btn, .parallax-section #btn2 {
@@ -621,45 +621,45 @@ section img#mountains_front
     border-radius: 40px;
     font-size: 1.5em;
     transform: translateY(100px);
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;  /* Smooth transition for hover effects */
     
 }
 
 
 .coming-soon {
-    position: absolute;  
+    position: absolute;  /* overlay will be positioned on top of the charity section */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);  
+    background-color: rgba(255, 255, 255, 0.8);  /* semi-transparent white overlay */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;  
-    backdrop-filter: blur(5px);  
+    z-index: 10;  /* ensure the overlay is above other content in the charity section */
+    backdrop-filter: blur(5px);  /* apply a blur to the background of this overlay */
 }
 
 .coming-soon p {
-    font-size: 2em;  
+    font-size: 2em;  /* increase the font size for visibility */
     font-weight: bold;
-    color: #2b1055;  
+    color: #2b1055;  /* same color as your buttons for consistency */
 }
 
 
 #logo1 {
-    transition: all 0.3s ease;  
-    cursor: pointer;  
-    animation: float 3s infinite; 
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    cursor: pointer;  /* Change cursor to hand on hover for better UX */
+    animation: float 3s infinite; /* This applies the floating animation to the logo */
 }
 
 #logo1:hover {
-    transform: scale(1.1);  
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  
+    transform: scale(1.1);  /* Enlarge the logo slightly */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Add a subtle shadow for depth */
 }
 
 
-
+/* As seen */
 
 .as-seen-in {
     
@@ -708,10 +708,10 @@ section img#mountains_front
 
 .logos img {
     margin: 0 20px;
-    vertical-align: middle; 
+    vertical-align: middle; /* Aligns the images with the middle of the line */
     width: 150px;
     height: 50px;
-    object-fit: contain; 
+    object-fit: contain; /* This ensures the logo maintains its aspect ratio */
 }
 
 
@@ -820,28 +820,28 @@ section img#mountains_front
 
 .utilities-slider {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;  /* stacks the children vertically */
     padding: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .utility-row {
-    display: flex;   
-    overflow-x: auto;  
+    display: flex;   /* lines up the boxes in a row */
+    overflow-x: auto;  /* makes it horizontally scrollable */
 }
 
 .utility-box {
-    flex: 0 0 auto;  
-    margin-right: 10px;  
+    flex: 0 0 auto;  /* ensures that boxes don't stretch or shrink */
+    margin-right: 10px;  /* gap between utilities */
 }
 
 .utility-frame {
-    border-radius: 20px; 
+    border-radius: 20px; /* provides the curved frame */
     padding: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    min-width: 300px; 
+    min-width: 300px; /* adjust width as needed */
 
 }
 
@@ -852,22 +852,22 @@ section img#mountains_front
     border-radius: 20px;
     padding: 20px;
     height: 600px;
-    display: flex;  
-    flex-direction: column;  
-    justify-content: center;  
-    align-items: center;  
+    display: flex;  /* Turn on Flexbox */
+    flex-direction: column;  /* Stack children vertically */
+    justify-content: center;  /* Center children horizontally */
+    align-items: center;  /* Center children vertically */
     color: #fff; 
     position: relative;
 }
 
 .utility-content:hover {
     filter: brightness(1.3) saturate(1.2);
-    transition: filter 0.3s; 
+    transition: filter 0.3s; /* Smooth transition for hover effects */
 }
 
 
 .utility-content:hover::before {
-    opacity: 1; 
+    opacity: 1; /* Show the shining line when content is hovered */
     animation: shine 1.5s infinite alternate;
 }
 
@@ -902,19 +902,19 @@ section img#mountains_front
     display: inline-block;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #007BFF; 
-    color: #fff; 
+    background-color: #007BFF; /* Darker background for DexTools */
+    color: #fff; /* White text */
     text-decoration: none;
     margin-top: 20px;
-    position: relative; 
-    overflow: visible; 
+    position: relative; /* Allows positioning of the coin relative to the button */
+    overflow: visible; /* So the coins can appear outside the boundaries of the button */
     z-index: 1; 
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 
-    
+    /* Optional: Add a slight hover effect to the button for better user feedback */
     &:hover {
-        transform: scale(1.05); 
-        box-shadow: 0px 0px 25px rgba(0, 123, 255, 0.6); 
+        transform: scale(1.05); /* Slightly enlarge the button */
+        box-shadow: 0px 0px 25px rgba(0, 123, 255, 0.6); /* Add a subtle glow when hovered */
     }
 }
 
@@ -971,21 +971,21 @@ section img#mountains_front
 
 @media (min-width: 768px) {
     .utilities-slider {
-        overflow-x: auto;   
+        overflow-x: auto;   /* Allows horizontal scrolling */
     }
-    
+    /* If you still want to set a specific width for larger screens, adjust this as necessary. */
     .utility-box {
-        flex: 0 0 calc(33.33% - 10px); 
+        flex: 0 0 calc(33.33% - 10px); /* Makes 3 boxes fit in a row, adjust as needed */
     }
 }
 
 
 
-
+/* Section about */
 .About {
     display: flex; 
     justify-content: flex-start;
-    align-items: flex-start;  
+    align-items: flex-start;  /* Align content to the top */
     position: relative;
     padding: 150px;
     padding-top: 30px;
@@ -994,18 +994,18 @@ section img#mountains_front
 }
 
 .About .about-content {   
-    width: 90%;  
+    width: 90%;  /* Takes full width of its container */
     padding-right: 60px;
     margin-bottom: 20px; 
     text-align: left;
 }
 
 .About .about-image {
-    width: 50%; 
+    width: 50%; /* Takes half of the container's width */
     padding: 0px;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center; /* Centering the image vertically */
+    justify-content: center; /* Centering the image horizontally */
 }
 
 @media (max-width: 768px) {
@@ -1013,12 +1013,12 @@ section img#mountains_front
         padding: 5px;
         padding-top: 15px;
         display: flex;
-        flex-direction: column;  
-        align-items: center;     
+        flex-direction: column;  /* Makes content stack vertically */
+        align-items: center;     /* Centers the content horizontally */
     }
 
     .About .about-image {
-        width: 100%; 
+        width: 100%; /* Takes full width on mobile */
         padding: 35px;
     }
     .About .about-content { 
@@ -1028,7 +1028,7 @@ section img#mountains_front
 
 
 
-
+/* About - Heading Styles */
 .About h2 {
     font-size: 3.5em;
     margin-bottom: 10px;
@@ -1046,7 +1046,7 @@ section img#mountains_front
     color: #fff;
 }
 
-
+/* About - Paragraph Styles */
 .About p {
     font-size: 1em;
     color: #fff;
@@ -1054,21 +1054,21 @@ section img#mountains_front
     line-height: 1.5;
 }
 
-
+/* About - Image Styles */
 .About .about-image .under {
-    max-width: 250px; 
-    height: auto; 
+    max-width: 250px; /* Makes sure the image doesn't overflow its container */
+    height: auto; /* Keeps the aspect ratio */
 }
 
 
 .about-content:hover h1,
 .about-content:hover h2,
 .about-content:hover p {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);  
-    transition: text-shadow 0.3s ease-in-out;      
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);  /* Glow effect */
+    transition: text-shadow 0.3s ease-in-out;      /* Smooth transition */
 }
 
-
+/* Styling for the background video */
 .bg-video {
     position: absolute;
     top: 0;
@@ -1076,10 +1076,10 @@ section img#mountains_front
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;  
-    opacity: 0;  
-    transition: opacity 0.3s ease-in-out;  
-    pointer-events: none;  
+    z-index: 1;  /* Adjusted to bring video forward */
+    opacity: 0;  /* Initially the video is not visible */
+    transition: opacity 0.3s ease-in-out;  /* Smooth transition */
+    pointer-events: none;  /* Makes video "click-through" when not hovering */
 }
 
 @media (max-width: 768px) {
@@ -1089,7 +1089,7 @@ section img#mountains_front
     }
 }
 
-
+/* Section title */
 
 .title {
     position: relative;
@@ -1101,7 +1101,7 @@ section img#mountains_front
     background-blend-mode: soft-light;
     background-position: bottom right;
     width: 100vw;
-    text-align: center; 
+    text-align: center; /* To center the content */
     color: #fff;
     padding-bottom: 55px;
 }
@@ -1113,25 +1113,25 @@ section img#mountains_front
 }
 
 .title h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Space between the title and the navigation */
 }
 
 .back-link {
     text-decoration: none;
-    margin-right: 10px; 
+    margin-right: 10px; /* Space between the 'back' link and the title */
 }
 
-
+/* Optional: Add hover effect for the back link */
 .back-link:hover {
     opacity: 0.7;
 }
 
 
-
+/* Section article */
 .article {
     display: flex; 
     justify-content: flex-start;
-    align-items: flex-start;  
+    align-items: flex-start;  /* Align content to the top */
     position: relative;
     padding: 150px;
     padding-top: 30px;
@@ -1140,28 +1140,28 @@ section img#mountains_front
 }
 
 .article .article-content {   
-    width: 90%;  
+    width: 90%;  /* Takes full width of its container */
     padding-right: 60px;
     margin-bottom: 20px; 
     text-align: left;
 }
 
 .article .article-image {
-    width: 50%; 
+    width: 50%; /* Takes half of the container's width */
     padding: 0px;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center; /* Centering the image vertically */
+    justify-content: center; /* Centering the image horizontally */
 }
 
 
 
 .article .article-image .under {
-    max-width: 380px; 
-    height: auto; 
+    max-width: 380px; /* Makes sure the image doesn't overflow its container */
+    height: auto; /* Keeps the aspect ratio */
 }
 
-
+/* article - Heading Styles */
 
 .article h1 {
     font-size: 1.5em;
@@ -1183,7 +1183,7 @@ section img#mountains_front
     margin-bottom: 10px;
 }
 
-
+/* article - Paragraph Styles */
 .article p {
     font-size: 1em;
     color: #fff;
@@ -1191,10 +1191,10 @@ section img#mountains_front
     line-height: 1.5;
 }
 
-
+/* article - Image Styles */
 .article .article-image .under {
-    max-width: 380px; 
-    height: auto; 
+    max-width: 380px; /* Makes sure the image doesn't overflow its container */
+    height: auto; /* Keeps the aspect ratio */
 }
 .mobile-sized-image {
     width: auto;
@@ -1214,15 +1214,15 @@ section img#mountains_front
         padding: 1px;
         padding-top: 15px;
         display: flex;
-        flex-direction: column;  
-        align-items: center;     
+        flex-direction: column;  /* Makes content stack vertically */
+        align-items: center;     /* Centers the content horizontally */
     }
 
 .article h2{
     font-size: 1em;
 }
     .article .article-image {
-        width: 100%; 
+        width: 100%; /* Takes full width on mobile */
         padding: 35px;
     }
     .article .article-content { 
@@ -1235,7 +1235,7 @@ section img#mountains_front
 @media (max-width: 768px) {
     .facebook-video-embed {
         position: relative;
-        padding-bottom: 56.25%; 
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
         padding-top: 25px;
         height: 0;
         overflow: hidden;
@@ -1256,7 +1256,7 @@ section img#mountains_front
     padding: 150px;
     padding-top: 10x;
     color: white;
-    border-radius: 0; 
+    border-radius: 0; /* Remove rounded corners */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     margin: 0;
     z-index: 10;
@@ -1279,7 +1279,7 @@ section img#mountains_front
 .token-details {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* for smaller screens */
     margin-bottom: 30px;
 }
 
@@ -1287,9 +1287,9 @@ section img#mountains_front
 
 .token-box {
     flex: 1;
-    min-width: 200px; 
+    min-width: 200px; /* adjust based on your design preference */
     padding: 20px;
-    background-color: #282528; 
+    background-color: #282528; /* slightly lighter than the main background */
     border-radius: 15px;
     text-align: center;
     margin: 10px;
@@ -1300,9 +1300,9 @@ section img#mountains_front
 .piechart-box{
     
     flex: 1;
-    min-width: 500px; 
+    min-width: 500px; /* adjust based on your design preference */
     padding: 20px;
-    background-color: #282528; 
+    background-color: #282528; /* slightly lighter than the main background */
     border-radius: 15px;
     text-align: left;
     margin: 10px;
@@ -1311,11 +1311,11 @@ section img#mountains_front
 }
 
 .extra-boxes .token-box {
-    filter: blur(2px); 
+    filter: blur(2px); /* Adjust the value for more or less blur */
 }
 
 .token-box:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* subtle hover effect */
 }
 
 .tax-use {
@@ -1362,7 +1362,7 @@ section img#mountains_front
 
 
 .earn-section {
-    background-color: #282528;  
+    background-color: #282528;  /* slightly lighter than the main background */
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -1372,7 +1372,7 @@ section img#mountains_front
 }
 
 .earn-button {
-    background-color: #007BFF;  
+    background-color: #007BFF;  /* Example blue, adjust to your website's shade of blue */
     color: white;
     padding-top: 5px;
     padding: 10px 20px;
@@ -1383,41 +1383,41 @@ section img#mountains_front
 }
 
 .earn-button:hover {
-    background-color: #0056b3;   
+    background-color: #0056b3;   /* slightly lighter orange for hover effect */
 }
 
 .box-button {
-    background-color: #007BFF;  
+    background-color: #007BFF;  /* Using the blue color for consistency */
     color: white;
     padding: 8px 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;  
-    display: block;  
-    text-align: center;  
-    width: 100%;  
-    max-width: 150px;  
-    margin-left: auto;  
+    margin-top: 10px;  /* Space above the button */
+    display: block;  /* Makes it easier to center */
+    text-align: center;  /* Ensures text in the button is centered */
+    width: 100%;  /* Full width of the parent container */
+    max-width: 150px;  /* Maximum width for the button */
+    margin-left: auto;  /* Auto margins for horizontal centering */
     margin-right: auto;
 }
 
 .box-button:hover {
-    background-color: #0056b3;  
+    background-color: #0056b3;  /* Darker shade of blue for hover */
 }
 
 .charity-section {
     font-family: 'Arial', sans-serif;
     padding: 150px;
-    background: #19181A; 
-    color: #ecf0f1; 
+    background: #19181A; /* Modern gradient background */
+    color: #ecf0f1; /* Light text for readability */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    
+    /* Flexbox Centering */
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
-    align-items: center;     
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Centers child elements vertically */
+    align-items: center;     /* Centers child elements horizontally */
     background-image: url(/lephant1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1465,23 +1465,23 @@ section img#mountains_front
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
-    gap: 30px; 
-    overflow-x: auto;  
+    gap: 30px; /* This will increase space between each slide */
+    overflow-x: auto;  /* makes it horizontally scrollable */
 }
 
 
 .slide {
-    background: rgba(236, 240, 241, 0.1); 
+    background: rgba(236, 240, 241, 0.1); /* Slight background for separation */
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .slide:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-10px); /* subtle lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
 }
 
 .slide h3 {
@@ -1503,7 +1503,7 @@ section img#mountains_front
     background-color: darkgray;
 }
 
-
+/* For the primary CTA */
 .charity-cta {
     background-color: #2C3E50;  
     color: #FFFFFF;
@@ -1523,13 +1523,13 @@ section img#mountains_front
 .extra-boxes {
     padding-top: 15px;
     display: flex;
-    justify-content: space-between; 
-    align-items: stretch; 
+    justify-content: space-between; /* Space boxes evenly across the line */
+    align-items: stretch; /* Ensure boxes are of equal height */
 }
 
 .token-box {
-    flex: 1; 
-    margin: 0 10px; 
+    flex: 1; /* Allows boxes to grow and take up equal space */
+    margin: 0 10px; /* Space between boxes; adjust as required */
   
 }
 
@@ -1544,26 +1544,26 @@ section img#mountains_front
 }
 }
 
-
+/* If you want them to stack on smaller screens: */
 @media only screen and (max-width: 1000px) {
     .extra-boxes {
         flex-direction: column;
     }
 
     .token-box {
-        margin: 1px 5; 
+        margin: 1px 5; /* Adjust for vertical spacing on mobile */
         margin-top: 10px;
     }
 }
 
-
+/* Base Styles for Roadmap Section */
 .roadmap-section {
     color: white;
     padding: 35px;
     text-align: center;
     padding-bottom: 115px;
-    background-size:cover;    
-    background-repeat: no-repeat; 
+    background-size:cover;    /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the background image */
     background-position: center;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -1609,13 +1609,13 @@ section img#mountains_front
     height: 20px;
     border-radius: 50%;
     background-color: #E63946;
-    margin-right: 10px; 
+    margin-right: 10px; /* Adjusted margin for horizontal space next to the circle */
     align-self: center;
 }
 .roadmap-header {
     display: flex;
-    align-items: center; 
-    gap: 10px; 
+    align-items: center; /* To vertically center the circle and title */
+    gap: 10px; /* For spacing between the circle and title */
 }
 
 .roadmap-item {
@@ -1623,26 +1623,26 @@ section img#mountains_front
     width: 300px; 
     height: 315px; 
     margin: 1px;
-    text-align: left; 
+    text-align: left; /* Left aligning the text */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start; /* Aligning items to the start for left alignment */
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px; /* Rounded corners */
     transition: box-shadow 0.3s ease;
 }
 
 .roadmap-item:nth-child(1) h3,
 .roadmap-item:nth-child(1) li {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow to make text pop against the gradient */
 }
 
 .roadmap-item:nth-child(1) h3 {
-    color: #f5a623; 
-    font-size: 1.5em; 
+    color: #f5a623; /* Bright color for the title "Stealth launch" */
+    font-size: 1.5em; /* Slightly larger font */
 }
 
-
+/* Add a hover effect to raise the box slightly */
 .roadmap-item:hover {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
@@ -1669,22 +1669,22 @@ section img#mountains_front
 }
 
 
-
+/* Apply the blinking effect to Phase 1's circle */
 .roadmap-item:nth-child(1) .roadmap-circle {
-    animation: blink 1s infinite;  
+    animation: blink 1s infinite;  /* 1s duration, repeating indefinitely */
 }
 
 
-
+/* Keyframes for the blinking animation */
 @keyframes blink {
     0% {
-        background-color: #19181A;  
+        background-color: #19181A;  /* Start color */
     }
     50% {
-        background-color: green;  
+        background-color: green;  /* Blink to green at the halfway point */
     }
     100% {
-        background-color: #19181A;  
+        background-color: #19181A;  /* Return to the start color */
     }
 }
 
@@ -1707,13 +1707,13 @@ section img#mountains_front
     }
 }
 
-
+/* Existing styles ... */
 
 @media (max-width: 1560px) {
 
     .roadmap-content {
         
-        flex-wrap: wrap;      
+        flex-wrap: wrap;      /* Allow the content to wrap */
     }
 
 
@@ -1724,7 +1724,7 @@ section img#mountains_front
 
 .mosaic-item {
     flex: 1;
-    min-width: calc(33.3333% - 5px); 
+    min-width: calc(33.3333% - 5px); /* Three images per row accounting for gaps */
     transition: transform 0.3s ease;
 }
 
@@ -1733,7 +1733,7 @@ section img#mountains_front
 }
 
 
-
+/* FAQ Section */
 .faq-section {
     padding: 0;
     color: black;
@@ -1751,7 +1751,7 @@ section img#mountains_front
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
-    overflow: hidden;  
+    overflow: hidden;  /* Keeps the border-radius for the child elements */
 }
 
 .faq-question {
@@ -1761,26 +1761,26 @@ section img#mountains_front
 }
 
 .faq-answer {
-    display: none;  
+    display: none;  /* initially hidden */
     padding: 10px 15px;
     background-color: white;
 }
 
 .faq-container {
-    background-color: #F8F8F8;  
-    border-radius: 20px;        
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
-    padding: 40px;              
-    margin: 50px auto;          
-    max-width: 900px;           
+    background-color: #F8F8F8;  /* Color of the box */
+    border-radius: 20px;        /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 40px;              /* Spacing inside the box */
+    margin: 50px auto;          /* Vertical spacing and auto horizontal centering */
+    max-width: 900px;           /* Maximum width of the box */
 }
 
-
+/* Section getting-started */
 .getting-started {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;  /* Changes direction to vertical */
     justify-content: center;
-    align-items: left;  
+    align-items: left;  /* Centers content */
     position: relative;
     padding: 150px;
     background: #19181A;
@@ -1788,12 +1788,12 @@ section img#mountains_front
 }
 
 .content-wrapper {
-    display: flex;  
-    justify-content: space-between;  
-    width: 100%;  
-  
-    width: 100%;  
-    padding: 0;  
+    display: flex;  /* Makes children align horizontally */
+    justify-content: space-between;  /* Spaces children evenly */
+    width: 100%;  /* Takes full width */
+  /* Sets a max width for responsiveness */
+    width: 100%;  /* Takes full width */
+    padding: 0;  /* Ensure no padding */
 }
 
 
@@ -1805,31 +1805,31 @@ section img#mountains_front
     padding: 0;
     padding-right: 30px;
     
-    display: flex;         
-    flex-direction: column; 
-    justify-content: space-between; 
+    display: flex;         /* Added */
+    flex-direction: column; /* Added */
+    justify-content: space-between; /* Added - This ensures maximum space between the elements, pushing the button to the bottom */
 }
 
 
 
 .getting-started .getting-started-image {
-    width: 50%; 
+    width: 50%; /* Takes half of the container's width */
     padding: 0px;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center; /* Centering the image vertically */
+    justify-content: center; /* Centering the image horizontally */
 }
 .getting-started .getting-started-image .under {
-    max-width: 380px; 
-    height: auto; 
+    max-width: 380px; /* Makes sure the image doesn't overflow its container */
+    height: auto; /* Keeps the aspect ratio */
 }
 
-
+/* Rest of your existing CSS */
 .getting-started h2 {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
-    text-align: left;  
+    text-align: left;  /* Align text to the left */
 }
 
 
@@ -1847,37 +1847,37 @@ section img#mountains_front
 }
 .getting-started button {
     padding: 10px 20px;
-    background-color: #007BFF;  
-    color: #fff;  
-    border: none;  
-    border-radius: 5px;  
-    cursor: pointer;  
-    transition: background-color 0.3s;  
+    background-color: #007BFF;  /* Blue color */
+    color: #fff;  /* White text */
+    border: none;  /* Removing any borders */
+    border-radius: 5px;  /* Slight rounded corners */
+    cursor: pointer;  /* Hand cursor on hover */
+    transition: background-color 0.3s;  /* Smooth transition effect */
 }
 
 .getting-started button:hover {
-    background-color: #0056b3;  
+    background-color: #0056b3;  /* Darker shade of blue on hover */
 }
 
 .getting-started-content {
     
     position: relative; 
-    z-index: 1;  
+    z-index: 1;  /* Setting a context for absolute positioning of the pseudo-element */
     transition: all 1s ease-in-out; 
     
 }
 
 .getting-started-content .btn {
     margin-top: auto;
-    margin-right: auto;  
-    padding: 8px 12px;   
-    text-align: left;    
-    width: auto;         
+    margin-right: auto;  /* Ensures button sticks to the left */
+    padding: 8px 12px;   /* Adjust the padding to fit the text better. Change values as needed. */
+    text-align: left;    /* Aligns the text to the left within the button */
+    width: auto;         /* Let's the button size itself based on its content */
 }
 
 .getting-started-content::before {
     content: "";
-    display: block;  
+    display: block;  /* Explicitly declaring block display */
     position: absolute;
     top: 0;
     left: 0;
@@ -1896,19 +1896,19 @@ section img#mountains_front
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-
+/* For Choose your wallet section */
 .getting-started-content:nth-child(1):hover::before {
     background-image: url("/img/wallet.png");
     opacity: 0.2;
 }
 
-
+/* For Configure your wallet section */
 .getting-started-content:nth-child(2):hover::before {
     background-image: url("/img/wallet-config.png");
     opacity: 0.2;
 }
 
-
+/* For Get some $ALPHAS section */
 .getting-started-content:nth-child(3):hover::before {
     background-image: url("/img/Uniswap.webp");
     opacity: 0.2;
@@ -1945,25 +1945,25 @@ section img#mountains_front
     z-index: 1000;
     transition: transform 0.3s ease, background-color 0.3s ease;
     position: fixed;
-    right: 20px; 
+    right: 20px; /* Increase the distance from the right edge for breathing space */
     top: 50%;
     transform: translateY(-50%);
-    padding: 25px 20px; 
+    padding: 25px 20px; /* More padding for a spacious look */
     background: linear-gradient(0deg, #19181A 0%, rgba(76, 68, 78, 0.90) 100%);
-    border-radius: 25px; 
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 25px; /* Softer rounded look */
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);/* Slightly softer shadow */
 }
 
 .social-icons:hover {
-    background: linear-gradient(to top, rgba(77, 77, 77, 0.95), rgba(55, 54, 56, 0.95)); 
+    background: linear-gradient(to top, rgba(77, 77, 77, 0.95), rgba(55, 54, 56, 0.95)); /* Slightly brighter gradient on hover with transparency */
 }
 
 .social-icons a img {
-    margin-bottom: 15px; 
-    width: 45px; 
+    margin-bottom: 15px; /* Increased spacing between icons */
+    width: 45px; /* Slightly larger icons */
     height: 45px;
     object-fit: cover;
-    transition: transform 0.3s ease, filter 0.3s ease; 
+    transition: transform 0.3s ease, filter 0.3s ease; /* Added filter to the transition for a brightness effect */
 }
 
 .social-icons a:last-child img {
@@ -1971,35 +1971,35 @@ section img#mountains_front
 }
 
 .social-icons a:hover img {
-    transform: scale(1.2) rotate(10deg); 
-    filter: brightness(1.2); 
+    transform: scale(1.2) rotate(10deg); /* Slightly reduced rotation for a subtle effect */
+    filter: brightness(1.2); /* Brighten the icon on hover */
 }
 
-
+/* Mobile optimization */
 @media only screen and (max-width: 768px) {
     .social-icons {
-        right: 5px; 
-        padding: 10px 10px; 
+        right: 5px; /* Slight adjustment from the right edge */
+        padding: 10px 10px; /* Reduced padding for mobile */
     }
 
     .social-icons a img {
-        margin-bottom: 10px; 
-        width: 20px; 
+        margin-bottom: 10px; /* Moderate spacing between icons for mobile */
+        width: 20px; /* Slightly larger icons for mobile, but not too big */
         height: 20px;
     }
 }
 
 @keyframes rotateMoon {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(0.5); 
+        transform: translate(-50%, -50%) rotate(0deg) scale(0.5); /* Combine translate, rotate, and scale */
     }
     100% {
-        transform: translate(-50%, -50%) rotate(360deg) scale(0.5); 
+        transform: translate(-50%, -50%) rotate(360deg) scale(0.5); /* Combine translate, rotate, and scale */
     }
 }
 
 #moon {
-    width: 100%; 
+    width: 100%; /* or whatever size you want */
     height: auto;
 
     position: absolute;
@@ -2011,16 +2011,16 @@ section img#mountains_front
 
 @media only screen and (max-width: 768px) {
     #moon {
-        width: 200%; 
+        width: 200%; /* Adjust this value as needed */
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
 
 footer {
-    background-color: #19181A; 
+    background-color: #19181A; /* Set to desired background color */
     padding: 150px 0;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif; /* or your preferred font */
     padding:150px;
 }
 
@@ -2082,13 +2082,13 @@ footer {
 
 .footer-socials {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Vertically align the items */
 }
 
 .footer-socials img {
     width: auto;
-    height: 40px; 
+    height: 40px; /* Change this value to your preferred size */
 }
 
 .footer-bottom p {
@@ -2113,7 +2113,7 @@ footer {
     background-color: #0056b3;   
 }
 
-
+/* Phone resolution fix */
 @media only screen and (max-width: 1100px) {
     .as-seen-in{
         padding: 25px;
