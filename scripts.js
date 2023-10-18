@@ -273,6 +273,30 @@ pauseBtn.onclick = () => {
 }
 
 
+// Function to redirect users based on their country
+function redirectByCountry(countryCode) {
+    if (countryCode === "CN") { // If the user is from China
+        window.location.href = "/Cn/index-cn.html";
+    } else {
+        window.location.href = "/index.html";
+    }
+}
+
+// Fetch the user's location using IPinfo
+fetch('https://ipinfo.io/json?token=6f9b41057cce53')
+    .then(response => response.json())
+    .then(data => {
+        const countryCode = data.country;
+        redirectByCountry(countryCode);
+    })
+    .catch(error => {
+        console.error('There was an error retrieving the country info!', error);
+        // If there's an error, you can default to English or handle it in some other way
+        window.location.href = "/index.html";
+    });
+
+
+
 
 });
 
