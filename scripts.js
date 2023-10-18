@@ -251,6 +251,7 @@ function playMusic() {
 const videoElement = document.querySelector('.under');
 const playButton = document.querySelector('.play-pause-button .fa-play');
 const pauseButton = document.querySelector('.play-pause-button .fa-pause');
+const video = document.querySelector('.under');
 
 playButton.addEventListener('click', function() {
     videoElement.play();
@@ -267,6 +268,11 @@ pauseButton.addEventListener('click', function() {
 videoElement.addEventListener('ended', function() {
     pauseButton.style.display = 'none';
     playButton.style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.under');
+    video.volume = 0.7; // This sets the video volume to 20% of its original volume
 });
 
 
