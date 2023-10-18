@@ -223,13 +223,48 @@ button1:active {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     transition: background-color 0.3s;
 }
 
 .languages-overlay a:hover {
     background-color: #f5f5f5;
 }
+
+/* Mobile */
+.translate-btn-mobile {
+    position: relative;
+    display: none;
+    padding: 10px 15px;
+    background: #19181A;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.translate-btn-mobile:hover {
+    background-color: #19181A;
+}
+.translate-btn-mobile:hover .languages-overlay {
+    display: block;
+}
+
+.translate-btn-mobile{
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .translate-btn-mobile {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+
+}
+
 
 
 body
@@ -289,7 +324,7 @@ body
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto; /* This pushes the burger menu to the right */
+     /* margin-left: auto; This pushes the burger menu to the right */
 }
 
 .menu-toggle .bar {

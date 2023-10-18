@@ -5,15 +5,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-    
+    <script src="scripts.js"></script>
 </head>
 
 <body>
 
     <header class="sticky-header">
-        <a href="#" class="logo_article">
+        <a href="/index.html" class="logo_article">
             <img src="img/Alphas-logo-2.webp" alt="ALPHAS Logo" width="150">  <!-- Adjust width as needed -->
         </a>
+        <div class="translate-btn-mobile">
+            <span class="flag flag-en"></span> EN
+            <div class="languages-overlay">
+                <a href="#About" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                <a href="/Cn/Wallets-guide-cn.html" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+            </div>
+        </div>
+
         <div class="menu-toggle" id="burger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -42,13 +50,17 @@
     
     <!-- Navigation Overlay -->
     <div class="nav-overlay">
+        
         <ul class="overlay-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Tokenomics">Tokenomic</a></li>
-            <li><a href="#Charity">Charity</a></li>
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#About">About</a></li>
+            <li><a href="/index.html#Tokenomics">Tokenomic</a></li>
+            <li><a href="/index.html#Roadmap">Roadmap</a></li>
+            <li><a href="/index.html#Charity">Charity</a></li>
             <li><a href="Contact.html">Contact</a></li>
+       
         </ul>
+
     </div>
 
     <div class="title">

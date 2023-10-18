@@ -118,23 +118,28 @@ menuToggle.addEventListener('click', () => {
 
 overlayLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-        if (!link.closest('.languages-overlay')) {
+        const targetId = event.target.getAttribute('href');
+        
+        // Check if the link has a fragment identifier
+        if (targetId.startsWith('#')) {
             event.preventDefault();
             navOverlay.classList.remove('active');
             
-            const targetId = event.target.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
             if (targetSection) {
                 targetSection.scrollIntoView({
                     behavior: 'smooth'
                 });
             }
         } else {
+            // This will be executed for links that don't start with '#', like "Contact.html"
             navOverlay.classList.remove('active');
         }
     });
 });
+
+
+
 
 
 

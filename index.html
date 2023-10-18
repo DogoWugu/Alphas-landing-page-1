@@ -72,6 +72,16 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="#" class="logo">
             <img src="img/Alphas-logo-2.webp" alt="ALPHAS Logo" width="150">  <!-- Adjust width as needed -->
         </a>
+
+        
+        <div class="translate-btn-mobile">
+            <span class="flag flag-en"></span> EN
+            <div class="languages-overlay">
+                <a href="#About" data-lang="en"><span class="flag flag-en"></span> EN</a>
+                <a href="/Cn/index-cn.html" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+            </div>
+        </div>
+
         <div class="menu-toggle" id="burger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -105,16 +115,19 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </header>
     
-    <!-- Navigation Overlay -->
+    <!-- Navigation Overlay Mobile -->
     <div class="nav-overlay">
+    
         <ul class="overlay-nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Tokenomics">Tokenomic</a></li>
-            <li><a href="#Roadmap">Roadmap</a></li>
-            <li><a href="#Charity">Charity</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="/Cn/index-cn.html">首页</a></li>   <!-- Home -->
+            <li><a href="/Cn/index-cn.html#About">关于</a></li>  <!-- About -->
+            <li><a href="/Cn/index-cn.html#Tokenomics">Tokenomic</a></li>  <!-- Tokenomic -->
+            <li><a href="/Cn/index-cn.html#Roadmap">路线图</a></li>  <!-- Roadmap -->
+            <li><a href="/Cn/index-cn.html#Charity">慈善</a></li>  <!-- Charity -->
+            <li><a href="Contact.html">联系</a></li>  <!-- Contact -->
+       
         </ul>
+    
     </div>
 
 

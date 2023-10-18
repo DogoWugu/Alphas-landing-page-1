@@ -69,9 +69,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <body>
 
     <header class="site-header">
-        <a href="#" class="logo">
-            <img src="/img/Alphas-logo-2.webp" alt="ALPHAS 标志" width="150">  <!-- 调整宽度 -->
+        <a href="/Cn/index-cn.html" class="logo">
+            <img src="/img/Alphas-logo-2.webp" alt="ALPHAS Logo" width="150">  <!-- Adjust width as needed -->
         </a>
+
+        <div class="translate-btn-mobile">
+            <span class="flag flag-zh-ch"></span> ZH-CH
+            <div class="languages-overlay">
+              
+                <a href="#" data-lang="ch"><span class="flag flag-zh-ch"></span> ZH-CH</a>
+                <a href="/index.html" data-lang="en"><span class="flag flag-en"></span> EN</a>
+            </div>
+        </div>
+
         <div class="menu-toggle" id="burger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -86,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="#Roadmap">路线图</a></li>
                 <li><a href="#Charity">慈善</a></li>
                 <li><a href="/Contact.html">联系方式</a></li>
+
                 <div class="translate-btn">
                     <span class="flag flag-zh-ch"></span> ZH-CH
                     <div class="languages-overlay">
