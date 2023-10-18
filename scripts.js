@@ -275,19 +275,18 @@ pauseBtn.onclick = () => {
 
 // Function to redirect users based on their country
 function redirectByCountry(countryCode) {
-    // Check local storage first
-    if (localStorage.getItem('userLanguageSet')) {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('path_to_chinese_page.html') || currentUrl.includes('path_to_english_page.html')) {
         return;
     }
 
     if (countryCode === "CN") { 
-        localStorage.setItem('userLanguageSet', 'true');
         window.location.href = "/Cn/index-cn.html";
     } else {
-        localStorage.setItem('userLanguageSet', 'true');
         window.location.href = "/index.html";
     }
 }
+
 
 // Fetch the user's location using IPinfo
 fetch('https://ipinfo.io/json?token=6f9b41057cce53')
