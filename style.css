@@ -1014,6 +1014,66 @@ section img#mountains_front
     }
 }
 
+.video-container {
+    position: relative;
+    width: 50px/* specify a width if needed */;
+    height: 100px/* specify a height if needed */;
+}
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;  /* Makes the wrapper fit the video size */
+}
+
+.under {
+    display: block;  /* To remove any unwanted space below the video */
+    width: 100%;
+}
+
+.play-pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-pause-button .fa {
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+}
+.play-pause-button .fa {
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Hover effect */
+.play-pause-button .fa:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+.play-pause-button .fa-play {
+    animation: pulse 1.5s infinite;  
+}
 
 
 /* Section about */
@@ -1091,7 +1151,7 @@ section img#mountains_front
 
 /* About - Image Styles */
 .About .about-image .under {
-    max-width: 325px; /* Makes sure the image doesn't overflow its container */
+    max-width: 220px; /* Makes sure the image doesn't overflow its container */
     height: auto; /* Keeps the aspect ratio */
 }
 

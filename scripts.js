@@ -248,32 +248,26 @@ function playMusic() {
     }
 }
 
-const playBtn = document.getElementById("playMusic");
-const pauseBtn = document.getElementById("pauseMusic");
-const music = document.getElementById("backgroundMusic");
+const videoElement = document.querySelector('.under');
+const playButton = document.querySelector('.play-pause-button .fa-play');
+const pauseButton = document.querySelector('.play-pause-button .fa-pause');
 
-playBtn.onclick = () => {
-    let playPromise = music.play();
-    if (playPromise !== undefined) {
-        playPromise.then(_ => {
-            // Hide play button and show pause button
-            playBtn.hidden = true;
-            pauseBtn.hidden = false;
-        }).catch(error => {
-            console.error("Playback failed:", error);
-        });
-    }
-}
+playButton.addEventListener('click', function() {
+    videoElement.play();
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'block';
+});
 
-pauseBtn.onclick = () => {
-    music.pause();
-    // Show play button and hide pause button
-    playBtn.hidden = false;
-    pauseBtn.hidden = true;
-}
+pauseButton.addEventListener('click', function() {
+    videoElement.pause();
+    pauseButton.style.display = 'none';
+    playButton.style.display = 'block';
+});
 
-
-
+videoElement.addEventListener('ended', function() {
+    pauseButton.style.display = 'none';
+    playButton.style.display = 'block';
+});
 
 
 });
