@@ -27,7 +27,7 @@ function redirectByCountry(countryCode) {
 
     const currentUrl = window.location.href;
 
-    if (countryCode === "CN" && !currentUrl.includes('path_to_chinese_page.html')) { 
+    if ((countryCode === "CN" || countryCode === "HK") && !currentUrl.includes('path_to_chinese_page.html')) { 
         localStorage.setItem('userLanguageSet', 'true');
         window.location.href = "/Cn/index-cn.html";
     } else if (!currentUrl.includes('path_to_english_page.html')) {
