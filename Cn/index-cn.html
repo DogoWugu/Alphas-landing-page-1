@@ -16,45 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script> 
-
-// Function to redirect users based on their country
-function redirectByCountry(countryCode) {
-    // Check if we've already set the language for this user
-    if (localStorage.getItem('userLanguageSet')) {
-        return;
-    }
-
-    const currentUrl = window.location.href;
-
-    if ((countryCode === "CN" || countryCode === "HK") && !currentUrl.includes('path_to_chinese_page.html')) { 
-        localStorage.setItem('userLanguageSet', 'true');
-        window.location.href = "/Cn/index-cn.html";
-        console.log('Success cn')
-    } else if (!currentUrl.includes('path_to_english_page.html')) {
-        localStorage.setItem('userLanguageSet', 'true');
-        window.location.href = "/index.html";
-        console.log('Success en')
-    }
-}
-
-// Fetch the user's location using IPinfo
-if (!localStorage.getItem('userLanguageSet')) {
-    fetch('https://ipinfo.io/json?token=6f9b41057cce53')
-        .then(response => response.json())
-        .then(data => {
-            const countryCode = data.country;
-            redirectByCountry(countryCode);
-            console.log('Success code')
-        })
-        .catch(error => {
-            console.error('There was an error retrieving the country info!', error);
-            // If there's an error, you can default to English or handle it in some other way
-            window.location.href = "/index.html";
-        });
-}
-
-</script>   
+ 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const clickableImages = document.querySelectorAll('[data-clickable]');
@@ -69,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-</>
+
 <script>
     $(document).ready(function(){
         // For Phase 1
