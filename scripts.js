@@ -275,9 +275,16 @@ pauseBtn.onclick = () => {
 
 // Function to redirect users based on their country
 function redirectByCountry(countryCode) {
-    if (countryCode === "CN") { // If the user is from China
+    // Check local storage first
+    if (localStorage.getItem('userLanguageSet')) {
+        return;
+    }
+
+    if (countryCode === "CN") { 
+        localStorage.setItem('userLanguageSet', 'true');
         window.location.href = "/Cn/index-cn.html";
     } else {
+        localStorage.setItem('userLanguageSet', 'true');
         window.location.href = "/index.html";
     }
 }
