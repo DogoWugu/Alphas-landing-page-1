@@ -273,38 +273,6 @@ pauseBtn.onclick = () => {
 }
 
 
-// Function to redirect users based on their country
-function redirectByCountry(countryCode) {
-    // Check if we've already set the language for this user
-    if (localStorage.getItem('userLanguageSet')) {
-        return;
-    }
-
-    const currentUrl = window.location.href;
-
-    if (countryCode === "CN" && !currentUrl.includes('path_to_chinese_page.html')) { 
-        localStorage.setItem('userLanguageSet', 'true');
-        window.location.href = "/Cn/index-cn.html";
-    } else if (!currentUrl.includes('path_to_english_page.html')) {
-        localStorage.setItem('userLanguageSet', 'true');
-        window.location.href = "/index.html";
-    }
-}
-
-// Fetch the user's location using IPinfo
-if (!localStorage.getItem('userLanguageSet')) {
-    fetch('https://ipinfo.io/json?token=6f9b41057cce53')
-        .then(response => response.json())
-        .then(data => {
-            const countryCode = data.country;
-            redirectByCountry(countryCode);
-        })
-        .catch(error => {
-            console.error('There was an error retrieving the country info!', error);
-            // If there's an error, you can default to English or handle it in some other way
-            window.location.href = "/index.html";
-        });
-}
 
 
 
