@@ -272,7 +272,7 @@ videoElement.addEventListener('ended', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('.under');
-    video.volume = 0.7; // This sets the video volume to 20% of its original volume
+    video.volume = 0.5;
 });
 
 
