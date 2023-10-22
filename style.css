@@ -25,6 +25,17 @@ button a:hover {
     text-decoration: underline; /* or any other effect you want on hover */
 }
 
+#timer {
+    font-size: 3em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; /* Keep the timer above other elements */
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -609,7 +620,7 @@ section img#mountains_front
 
 
 
-#btn, #btn2 {
+#btn, #btn2,#btn2b {
     text-decoration: none;
     padding: 8px 30px;
     display: inline-block;
@@ -644,9 +655,10 @@ section img#mountains_front
 }
 
 
-#btn, #btn2 {
+#btn, #btn2, #btn3 {
     z-index: 20;  /* This z-index is higher, ensuring the buttons are above the mountain image */
     position: relative; /* Ensures z-index works properly */
+
 }
 
 .parallax-section #btn, .parallax-section #btn2 {
@@ -659,6 +671,7 @@ section img#mountains_front
     transition: all 0.5s ease;  /* Smooth transition for hover effects */
     
 }
+
 
 
 .coming-soon {
@@ -688,10 +701,22 @@ section img#mountains_front
     animation: float 3s infinite; /* This applies the floating animation to the logo */
 }
 
-#logo1:hover {
-    transform: scale(1.1);  /* Enlarge the logo slightly */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Add a subtle shadow for depth */
+#timer{
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    cursor: pointer;  /* Change cursor to hand on hover for better UX */
+    animation: float 3s infinite; /* This applies the floating animation to the logo */
+    text-shadow: 
+        1px 0px 0px #000,   
+        -1px 0px 0px #000,  
+        0px 1px 0px #000,   
+        0px -1px 0px #000,  
+        1px 1px 0px #000,  
+        -1px -1px 0px #000,
+        1px -1px 0px #000, 
+        -1px 1px 0px #000;  
+        width: 1000;
 }
+
 
 
 /* As seen */

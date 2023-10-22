@@ -10,7 +10,7 @@ let btn = document.getElementById('btn');
 let btn2 = document.getElementById('btn2');
 let bouncingArrowContainer = document.getElementById('bouncing-arrow-container');
 let logo1 = document.getElementById('logo1');
-
+let timer = document.getElementById('timer');
 let mountains_front = document.getElementById('mountains_front');
 let header = document.querySelector('header');
 
@@ -21,11 +21,10 @@ window.addEventListener('scroll', function () {
     gajah.style.top = value * 0.5 + 'px';
     Ella_Solo.style.top = value * 0.6 + 'px';
     logo1.style.top = value * 0.8 + 'px';
+    timer.style.top = `calc(50% + ${value * 0.8}px)`;
 
     mountains_behind.style.top = value * 0.5 + 'px';
     mountains_front.style.top = value * 0 + 'px';
-    text.style.marginRight = value * 4 + 'px';
-    text.style.marginTop = value * 1.5 + 'px';
     btn.style.marginTop = value * 1.5 + 'px';
     btn2.style.marginTop = value * 1.5 + 'px';
     let arrowContainerTop = value * 2.3 + 'px'
@@ -274,6 +273,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('.under');
     video.volume = 0.7; // This sets the video volume to 20% of its original volume
 });
+
+function countdown() {
+    const now = new Date();
+    
+    const eventTimeUTC = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 4, 0, 0); // 4am UTC which is 11am UTC+7
+
+    if (now.getTime() + now.getTimezoneOffset() * 60 * 1000 > eventTimeUTC) {
+        eventTimeUTC.setDate(eventTimeUTC.getDate() + 1);
+    }
+
+    const diff = eventTimeUTC - (now.getTime() + now.getTimezoneOffset() * 60 * 1000);
+
+    let hours = Math.floor(diff / (1000 * 60 * 60));
+    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('hours').textContent = hours < 10 ? "0" + hours : hours;
+    document.getElementById('minutes').textContent = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById('seconds').textContent = seconds < 10 ? "0" + seconds : seconds;
+}
+
+setInterval(countdown, 1000);
 
 
 });
