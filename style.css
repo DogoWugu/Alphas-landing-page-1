@@ -1736,6 +1736,8 @@ section img#mountains_front
     margin-right: 10px; /* Adjusted margin for horizontal space next to the circle */
     align-self: center;
 }
+
+
 .roadmap-header {
     display: flex;
     align-items: center; /* To vertically center the circle and title */
@@ -1794,10 +1796,13 @@ section img#mountains_front
 
 
 /* Apply the blinking effect to Phase 1's circle */
-.roadmap-item:nth-child(1) .roadmap-circle {
+.roadmap-item:nth-child(2) .roadmap-circle {
     animation: blink 1s infinite;  /* 1s duration, repeating indefinitely */
 }
 
+.roadmap-item:nth-child(1) .roadmap-circle {
+    background-color: green;
+}
 
 /* Keyframes for the blinking animation */
 @keyframes blink {
