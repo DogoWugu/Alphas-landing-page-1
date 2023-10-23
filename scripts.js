@@ -274,27 +274,6 @@ document.addEventListener('DOMContentLoaded', function() {
     video.volume = 0.7; // This sets the video volume to 20% of its original volume
 });
 
-function countdown() {
-    const now = new Date();
-    
-    const eventTimeUTC = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 4, 0, 0); // 4am UTC which is 11am UTC+7
-
-    if (now.getTime() + now.getTimezoneOffset() * 60 * 1000 > eventTimeUTC) {
-        eventTimeUTC.setDate(eventTimeUTC.getDate() + 1);
-    }
-
-    const diff = eventTimeUTC - (now.getTime() + now.getTimezoneOffset() * 60 * 1000);
-
-    let hours = Math.floor(diff / (1000 * 60 * 60));
-    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    document.getElementById('hours').textContent = hours < 10 ? "0" + hours : hours;
-    document.getElementById('minutes').textContent = minutes < 10 ? "0" + minutes : minutes;
-    document.getElementById('seconds').textContent = seconds < 10 ? "0" + seconds : seconds;
-}
-
-setInterval(countdown, 0);
 
 
 });
