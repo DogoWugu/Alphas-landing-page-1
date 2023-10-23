@@ -294,7 +294,7 @@ function countdown() {
     document.getElementById('seconds').textContent = seconds < 10 ? "0" + seconds : seconds;
 }
 
-setInterval(countdown, 1000);
+setInterval(countdown, 0);
 
 
 });
