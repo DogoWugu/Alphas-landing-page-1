@@ -34,7 +34,19 @@ button a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 10; /* Keep the timer above other elements */
+
+    font-size: 16px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    #timer {
+        font-size: 14px;
+    }
+
+
+}
+
 
 .modal {
     display: none;
@@ -1803,6 +1815,12 @@ section img#mountains_front
 .roadmap-item:nth-child(1) .roadmap-circle {
     background-color: green;
 }
+
+H-1 {
+    font-size: 1px;
+}
+
+
 
 /* Keyframes for the blinking animation */
 @keyframes blink {
