@@ -710,8 +710,20 @@ section img#mountains_front
 #logo1 {
     transition: all 0.3s ease;  /* Smooth transition for hover effects */
     cursor: pointer;  /* Change cursor to hand on hover for better UX */
-    animation: float 3s infinite; /* This applies the floating animation to the logo */
+    animation: hoverEffect 1s infinite alternate;
 }
+
+@keyframes hoverEffect {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px); /* This controls the hover height. Adjust as needed. */
+    }
+}
+
+
+
 
 #timer{
     transition: all 0.3s ease;  /* Smooth transition for hover effects */
@@ -1482,7 +1494,7 @@ section img#mountains_front
 
 }
 .piechart-box{
-    min-width: 380px;
+    min-width: 340px;
 }
 .img-pie {
     display: none;
@@ -1669,6 +1681,45 @@ section img#mountains_front
   
 }
 
+.contract-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contract {
+    display: flex;
+    align-items: center;
+}
+
+.community-text {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.perks-text {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
 @media only screen and (max-width: 768px) {
 .charity-slider{
    gap: 0px;
@@ -1690,6 +1741,9 @@ section img#mountains_front
         margin: 1px 5; /* Adjust for vertical spacing on mobile */
         margin-top: 10px;
     }
+
+
+
 }
 
 /* Base Styles for Roadmap Section */
