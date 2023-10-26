@@ -788,6 +788,7 @@ section img#mountains_front
 .logos {
     display: inline-block;
     animation: marquee 20s linear infinite;
+    cursor: pointer;
 }
 
 .logos img {
@@ -1922,6 +1923,14 @@ H-1 {
 
 
 
+#countdown {
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 .mosaic-item {
     flex: 1;
@@ -2441,3 +2450,444 @@ body {
     }
 
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* To center the inner content horizontally */
+    }
+    
+    .columns-wrapper {
+    display: flex;
+    padding-top: 0px;
+    }
+    
+    .columns-wrapper-row {
+        display: table-row;
+        padding-top: 0px;
+        }
+    
+    .row{
+        display: flex;
+        flex-direction: row-middle;
+        margin: 0px;
+        /* width: 1400px; */
+        gap:5px;
+    }   
+    
+    .column {
+          
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            
+        }
+    
+    
+        .box {
+          width: 435px;
+          height: 115px;
+            margin: 5px 0;
+            padding: 15px;
+            background-color: #282528;
+            border-radius: 10px; 
+            color:white !important;
+           text-align: center;
+            place-items: center; /* Horizontally and vertically center content */
+              
+            gap: 1px;
+        }
+    
+    
+        .box h2 {
+            margin: 0;
+            font-weight: bold;
+        }
+    
+        .box p {
+            margin: 5px;
+        }   
+        
+        .box-row {
+            width: 435px;
+            height: 145px; 
+              margin: 5px 0;
+              padding: 20px;
+              background-color: #282528;
+              border-radius: 10px; 
+              color:white !important;
+             text-align: center;
+              place-items: center; /* Horizontally and vertically center content */
+                 
+              gap: 1px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              
+          }
+    
+          .box-row h2 {
+            font-size: 1.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+    
+        .box-row p {
+            margin: 5px;
+        }   
+    
+        .box-start-earning {
+            width: 1300px;
+              margin: 5px 0;
+              padding: 20px;
+              background-color: #282528;
+              border-radius: 10px; 
+              color:white !important;
+             text-align: center;
+              place-items: center; /* Horizontally and vertically center content */
+                 
+              gap: 1px;
+              height: 145px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+          }
+      
+      
+          .box-start-earning h2 {
+            font-size: 1.5em;
+              margin: 0;
+              font-weight: bold;
+          }
+      
+          .box-start-earning p {
+              margin: 5px;
+          }   
+    
+        .container-learn-nmore {
+            display: flex;
+            align-items: center;
+            width: 150px;
+            padding: 0px;
+        }
+    
+        .container-learn-nmore2 {
+            display: table-row;
+            align-items: center;
+            width: 150px;
+            padding: 0px;
+        }
+    
+        .box-learn-more {
+            width: 415px; /* Adjust as needed */
+            height: 95px; /* Adjust as needed */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #282528;
+            cursor: pointer;
+            place-items: center;
+           
+        }
+
+        .box-learn-more:hover {
+            background-size: 100%;
+        }
+    
+        .box-learn-more-title {
+            width: 417px;
+            
+              margin: 5px 0;
+              padding: 0px;
+              background-color: #282528;
+              border-radius: 10px; 
+              color:white !important;
+             text-align: center;
+              place-items: center; /* Horizontally and vertically center content */
+              height: 80px;    
+              gap: 1px;
+           
+        }
+        .box-learn-more-title h1 {
+            font-size: 1.5em;
+            margin: 5px;
+        }
+        
+        .header {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .top-box {
+    margin-bottom: 0px;  
+    width: 1300px; 
+    height: 100px;
+    background-image: url('/tokenomic-top.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3px;
+    padding-bottom:0px;
+    text-align: center;
+    }
+    .top-box h1 {
+        margin-top: 5px;
+    }
+    
+
+
+    .box-learn-more p {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* This adds a shadow to make text more readable on images */
+    }
+    
+    .label {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    /* Styling for the rounded Ethereum address box */
+    .rounded-address {
+        margin-top: 10px;
+        background-color: #f4f4f4; /* Light gray background for the address box */
+        border-radius: 20px;       /* Rounded corners */
+        padding: 10px 0px;        /* Some padding around the address */
+        text-align: center;        /* Center the text */
+    color: black !important;
+    }
+    
+    
+        .box-content-5 {
+          background-color: #00000000;
+    background-image: url('/piechart.png');
+    background-size: cover;        /* make the image cover the box */
+    background-position: left top; /* position the image to the top-left corner */
+    background-repeat: no-repeat;  /* prevent the image from repeating */
+        width: 400px;
+          height: 285px;
+      }
+    
+      .info-card {
+        margin-top: 10px;
+        background-color: #f4f4f4; /* Light gray background for the address box */
+        border-radius: 20px;       /* Rounded corners */
+        padding: 12px 21px;        /* Some padding around the address */
+        text-align: center;        /* Center the text */
+        color: black !important;
+    }
+    
+
+
+
+    .info-card-track-wallet {
+        margin-top: 5px;
+        background-color: #f4f4f4; /* Light gray background for the address box */
+        border-radius: 20px;       /* Rounded corners */
+        padding: 15px 17px;        /* Some padding around the address */
+        text-align: center;        /* Center the text */
+        color: black !important;
+        cursor: pointer;
+    }
+    
+    .info-card-t-title {
+        margin-top: 5px;
+        background-color: #282528; /* Light gray background for the address box */
+        border-radius: 0px;       /* Rounded corners */
+        padding: 35px 9px;        /* Some padding around the address */
+        text-align: center;        /* Center the text */
+        color: black !important;
+        border-top-left-radius: 10px;     /* Adjust the value as needed */
+        border-bottom-left-radius: 10px;
+        height: 115px;
+        width: 100;
+    }
+    
+    #track-wallet{
+        padding: 35px 21px;
+    }
+    .label-title {
+        font-size: 1.2em;
+        
+        margin: 0;
+        text-align: center;
+        margin-bottom: 0px;
+        color: white;
+    }
+    .label-track{
+        cursor: pointer;
+    }
+
+    .info-card-t {
+        margin-top: 10px;
+        background-color: #f4f4f4; /* Light gray background for the address box */
+        border-radius: 0px;       /* Rounded corners */
+        padding: 15px 17px;        /* Some padding around the address */
+        text-align: center;        /* Center the text */
+        color: black !important;
+        
+        
+    }
+    
+    .double-row {
+        display: flex; 
+        gap: 5px;
+
+        
+    }
+    .double-row-t {
+        display: flex; 
+        gap: 0px;
+        margin-bottom: 5px;
+        
+    }
+
+    .double-row-t-t {
+        display: flex; 
+        gap: 0px;
+        margin-bottom: 5px;
+        flex-wrap: wrap !important;
+        
+    }
+
+      .container-phone{
+        position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      
+      }
+    
+      #content2-box {
+    height: 240px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    width: 440px;
+    }
+    #content3-box {
+        height: 115px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-bottom: 35px;
+        margin-top: 5px;
+        background-color: #525052;
+        width: 328px;
+        border-top-right-radius: 10px;     /* Adjust the value as needed */
+        border-bottom-right-radius: 10px;
+        }
+    
+    #content3-box p {
+        margin: 0px ;
+        color: white;
+        margin-top: 10px;
+        
+    }
+    #content3-box-buy{
+        height: 115px;
+        padding-top: 5px;
+        padding-bottom: 35px;
+        background-color: #525052;
+        width: 330px;
+        border-top-right-radius: 10px;     /* Adjust the value as needed */
+        border-bottom-right-radius: 10px;
+        margin-top:5px;
+    }
+    /* Buy tax */
+    #content3-box-buy p {
+        color: white;
+        margin-top: 30px;
+    
+    }
+    
+      @media only screen and (max-width: 1300px) {
+    .columns-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-box{
+        width: 375px !important;
+    }
+    .container-phone{
+    display: table-row !important;      
+    }
+
+    #countdown {
+        font-size: 15px;
+    }
+    .top-box h1{
+        font-size: 30px;
+    }
+    #content3-box p { 
+        padding-right: 30px;
+    }
+
+
+.box-content-5{
+margin-left: 30px;
+width: 375px;
+height: 265px;
+
+}
+#content3-box{
+    width: 300px;
+}
+
+#content3-box-buy {
+    width: 300px;
+}
+#content3-box-buy p{
+    padding-right: 30px;
+}
+.info-card-t-title {
+    margin-left: 30px;
+}
+info-card {
+    padding: 13px 50px;
+}
+.box-start-earning{
+    padding: 75px -1;
+    margin: 75px;
+    width: 445px;
+    }
+    .box-learn-more-title {
+        width: 435px;
+    }
+
+    .box-learn-more {
+        width: 435px;
+    }
+
+.row {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff; /* or any other color you prefer */
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: auto; 
+    }
+    
+    .btn:hover {
+        background-color: #0056b3; /* darken the color on hover */
+        box-shadow: 0 0 15px 5px rgba(0,123,255,0.7); /* Blue glow effect */
+    }

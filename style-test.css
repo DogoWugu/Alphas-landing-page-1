@@ -1,0 +1,354 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#19181A,#19181A);
+    color: white;
+}
+
+
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center; /* To center the inner content horizontally */
+}
+
+.columns-wrapper {
+display: flex;
+padding-top: 0px;
+}
+
+.columns-wrapper-row {
+    display: table-row;
+    padding-top: 0px;
+    }
+
+.row{
+    display: flex;
+    flex-direction: row-middle;
+    margin: 0px;
+    /* width: 1400px; */
+    gap:20px;
+}   
+
+.column {
+      
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+
+
+    .box {
+      width: 415px;
+      height: 50px;
+        margin: 5px 0;
+        padding: 20px;
+        background-color: #282528;
+        border-radius: 10px; 
+        color:white !important;
+       text-align: center;
+        place-items: center; /* Horizontally and vertically center content */
+        height: 80px;    
+        gap: 1px;
+    }
+
+
+    .box h2 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .box p {
+        margin: 5px;
+    }   
+    
+    .box-row {
+        width: 420px;
+        height: 50px;
+          margin: 5px 0;
+          padding: 20px;
+          background-color: #282528;
+          border-radius: 10px; 
+          color:white !important;
+         text-align: center;
+          place-items: center; /* Horizontally and vertically center content */
+          height: 105px;    
+          gap: 1px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          
+      }
+
+      .box-row h2 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .box-row p {
+        margin: 5px;
+    }   
+
+    .box-start-earning {
+        width: 1355px;
+          margin: 5px 0;
+          padding: 20px;
+          background-color: #282528;
+          border-radius: 10px; 
+          color:white !important;
+         text-align: center;
+          place-items: center; /* Horizontally and vertically center content */
+          height: 100px;    
+          gap: 1px;
+      }
+  
+  
+      .box-start-earning h2 {
+          margin: 0;
+          font-weight: bold;
+      }
+  
+      .box-start-earning p {
+          margin: 5px;
+      }   
+
+    .container-learn-nmore {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        padding: 0px;
+    }
+
+    .container-learn-nmore2 {
+        display: table-row;
+        align-items: center;
+        width: 150px;
+        padding: 0px;
+    }
+
+    .box-learn-more {
+        width: 435px; /* Adjust as needed */
+        height: 105px; /* Adjust as needed */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #282528;
+        
+        place-items: center;
+       
+    }
+
+    .box-learn-more-title {
+        width: 435px;
+        height: 50px;
+          margin: 5px 0;
+          padding: 0px;
+          background-color: #282528;
+          border-radius: 10px; 
+          color:white !important;
+         text-align: center;
+          place-items: center; /* Horizontally and vertically center content */
+          height: 80px;    
+          gap: 1px;
+       
+    }
+    .box-learn-more-title h1 {
+        font-size: 1.5em;
+        margin: 5px;
+    }
+    
+    .header {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .top-box {
+margin-bottom: 0px;  
+width: 1350px; 
+background-image: url('/tokenomic-top.png');
+background-size: contain;
+background-repeat: no-repeat;
+padding-top: 3px;
+padding-bottom:0px;
+text-align: center;
+}
+
+
+.box-learn-more p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* This adds a shadow to make text more readable on images */
+}
+
+.label {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Styling for the rounded Ethereum address box */
+.rounded-address {
+    margin-top: 10px;
+    background-color: #f4f4f4; /* Light gray background for the address box */
+    border-radius: 20px;       /* Rounded corners */
+    padding: 10px 20px;        /* Some padding around the address */
+    text-align: center;        /* Center the text */
+color: black !important;
+}
+
+
+    .box-content-5 {
+      background-color: #00000000;
+background-image: url('/piechart.png');
+background-size: cover;        /* make the image cover the box */
+background-position: left top; /* position the image to the top-left corner */
+background-repeat: no-repeat;  /* prevent the image from repeating */
+    width: 400px;
+      height: 270px;
+  }
+
+  .info-card {
+    margin-top: 10px;
+    background-color: #f4f4f4; /* Light gray background for the address box */
+    border-radius: 20px;       /* Rounded corners */
+    padding: 15px 17px;        /* Some padding around the address */
+    text-align: center;        /* Center the text */
+    color: black !important;
+}
+
+.info-card-track-wallet {
+    margin-top: 25px;
+    background-color: #f4f4f4; /* Light gray background for the address box */
+    border-radius: 20px;       /* Rounded corners */
+    padding: 15px 17px;        /* Some padding around the address */
+    text-align: center;        /* Center the text */
+    color: black !important;
+}
+
+.info-card-t-title {
+    margin-top: 10px;
+    background-color: #282528; /* Light gray background for the address box */
+    border-radius: 0px;       /* Rounded corners */
+    padding: 35px 14px;        /* Some padding around the address */
+    text-align: center;        /* Center the text */
+    color: black !important;
+    border-top-left-radius: 10px;     /* Adjust the value as needed */
+    border-bottom-left-radius: 10px;
+}
+
+#track-wallet{
+    padding: 35px 21px;
+}
+.label-title {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.info-card-t {
+    margin-top: 10px;
+    background-color: #f4f4f4; /* Light gray background for the address box */
+    border-radius: 0px;       /* Rounded corners */
+    padding: 15px 17px;        /* Some padding around the address */
+    text-align: center;        /* Center the text */
+    color: black !important;
+    
+}
+
+.double-row {
+    display: flex; 
+    gap: 5px;
+    
+}
+.double-row-t {
+    display: flex; 
+    gap: 0px;
+    
+}
+  .container-phone{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  display: none;
+  }
+
+  #content2-box {
+height: 210px;
+padding-top: 5px;
+padding-bottom: 35px;
+}
+#content3-box {
+    height: 77px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 35px;
+    background-color: #525052;
+    width: 326px;
+    border-top-right-radius: 10px;     /* Adjust the value as needed */
+    border-bottom-right-radius: 10px;
+    }
+
+#content3-box p {
+    margin: 0px ;
+    color: white;
+    margin-top: 10px;
+    
+}
+#content3-box-buy{
+    height: 77px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    background-color: #525052;
+    width: 320px;
+    border-top-right-radius: 10px;     /* Adjust the value as needed */
+    border-bottom-right-radius: 10px;
+    
+}
+/* Buy tax */
+#content3-box-buy p {
+    color: white;
+    margin-top: 30px;
+
+}
+
+  @media only screen and (max-width: 768px) {
+.container {
+    display: none !important;
+}
+
+.container-phone{
+display: table-row !important;      
+}
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* or any other color you prefer */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: auto; 
+}
+
+.btn:hover {
+    background-color: #0056b3; /* darken the color on hover */
+    box-shadow: 0 0 15px 5px rgba(0,123,255,0.7); /* Blue glow effect */
+}

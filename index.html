@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
      <div class="social-icons">
         <a href="https://twitter.com/AlphasElephant" target="_blank"><img src="/img/icons/Twitter.png" alt="Twitter Icon"></a><br>
         <a href="https://t.me/AlphasElephant" target="_blank"><img src="/img/icons/Telegram.png" alt="Telegram Icon"></a><br>
-
+        <a href="https://coinmarketcap.com/currencies/alphas/" target="_blank"><img src="/img/icons/coinmarketcap-logo-064D167A0E-seeklogo.com.png" alt="Coin marketcap"></a><br>
     </div>
     
     <div class="as-seen-in" id="About">
@@ -175,21 +175,21 @@ document.addEventListener('DOMContentLoaded', function() {
         <h1>As Seen In </h1>
         <div class="marquee">
             <div class="logos">
-                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img data-clickable data-href="https://coinmarketcap.com/currencies/alphas/" src="img/News/Coinmarketcap.png" alt="coinmarketcap">
                 <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
-                <img src="/img/News/Dextools.png" alt="dextools">
+                <img data-clickable data-href="https://www.dextools.io/app/en/ether/pair-explorer/0x1ec478cc20c1a453871732f5494da74ccbb61c97" src="/img/News/Dextools.png" alt="dextools">
                 <!-- Repeat logos for continuous effect -->
-                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                <img data-clickable data-href="https://coinmarketcap.com/currencies/alphas/" src="img/News/Coinmarketcap.png" alt="coinmarketcap">
                 <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
-                <img src="/img/News/Dextools.png" alt="dextools">
+                <img data-clickable data-href="https://www.dextools.io/app/en/ether/pair-explorer/0x1ec478cc20c1a453871732f5494da74ccbb61c97" src="/img/News/Dextools.png" alt="dextools">
                  <!-- Repeat logos for continuous effect -->
-                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                 <img data-clickable data-href="https://coinmarketcap.com/currencies/alphas/" src="img/News/Coinmarketcap.png" alt="coinmarketcap">
                 <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
-                <img src="/img/News/Dextools.png" alt="dextools">
+                <img data-clickable data-href="https://www.dextools.io/app/en/ether/pair-explorer/0x1ec478cc20c1a453871732f5494da74ccbb61c97" src="/img/News/Dextools.png" alt="dextools">
                  <!-- Repeat logos for continuous effect -->
-                <img src="img/News/Coinmarketcap-blurr.png" alt="coinmarketcap">
+                 <img data-clickable data-href="https://coinmarketcap.com/currencies/alphas/" src="img/News/Coinmarketcap.png" alt="coinmarketcap">
                 <img src="/img/News/CoinGecko-blur.png" alt="CoinGecko">
-                <img src="/img/News/Dextools.png" alt="dextools">
+                <img data-clickable data-href="https://www.dextools.io/app/en/ether/pair-explorer/0x1ec478cc20c1a453871732f5494da74ccbb61c97" src="/img/News/Dextools.png" alt="dextools">
             </div>
         </div>
     </div>
@@ -323,72 +323,162 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Tokenomic Section -->
 <div class="tokenomic-section" id="Tokenomics">
 
+    <div class="container">
+        <h2>Tokenomics</h2>
+          <!-- Full-width box on top -->
+          <div class="box top-box">
+        <h1>MONTHLY LOTTERY COUNT DOWN</h1>
+        <div id="countdown">
+            <span id="days"></span> days 
+            <span id="hours1"></span> hours 
+            <span id="minutes"></span> minutes 
+            <span id="seconds"></span> seconds
+        </div>
+          </div>
+      
+          <!-- Wrapper for the columns -->
+          <div class="columns-wrapper">
+              <div class="column">
+                  <div class="box">
+                    <div class="label">Contract Adress (ETH)
+                      <div class="rounded-address">
+                        0xe784d58a669011311cf02880ec35657aef6e59e6 
+                    </div>
+                    </div>
+      
+                  </div>
+                  <div class="box" id="content2-box">
+                    <div class="info-card">
+                      <div class="label">Token Supply</div>
+                      <div class="value">1,000,000,000,000 ALPHAS</div>
+                  </div>
+                  <div class="double-row">
+                    <div class="info-card">
+                        <div class="label">Token Burned</div>
+                        <div class="value">100,000,000,000 ALPHAS</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="label">Burn Percentage</div>
+                        <div class="value">10%</div>
+                    </div>
+                </div>
+                <div data-clickable data-href="https://app.uncx.network/amm/uni-v2/pair/0x1ec478cc20c1a453871732f5494da74ccbb61c97" class="info-card" style="cursor: pointer;">
+                  <div data-clickable data-href="https://app.uncx.network/amm/uni-v2/pair/0x1ec478cc20c1a453871732f5494da74ccbb61c97" class="label" style="cursor: pointer;">100% of uniswap V2 liquidity locked</div>
+                  
+              </div>
+      
+                </div>
+                  
+              </div>
+              <div class="column">
+                <div class="double-row-t">
+                  <div class="info-card-t-title" id="track-wallet">
+                      <div class="label-title" style="font-weight: bold;"  >Track</div>
+                      <div class="label-title" style="font-weight: bold;"  >Wallet</div>
+                  </div>
+                  <div class="info-card-t" id="content3-box">
+                      
+                    <div class="double-row-t-t">
+                      <div data-clickable data-href="https://etherscan.io/address/0x1b32b996de06d16a3c9c41973421babe902053ec" class="info-card-track-wallet">
+                          <div  class="label-track">Cex</div>
+                      </div>
+                      <div data-clickable data-href="https://etherscan.io/address/0xB4EF401607a8BF6d30bCF4981E215938756A699e" class="info-card-track-wallet">
+                          <div class="label-track">Staking</div>
+                         
+                      </div>
+                      <div data-clickable data-href="https://etherscan.io/tx/0xa6d25b05a718baf938eca26f2fa5bbe390ad7b7a474cac58e282eebd58d398ff" class="info-card-track-wallet">
+                        <div class="label-track">Burn</div>
+                       
+                    </div>
 
-    <h2>Tokenomics</h2>
-    <div class="token-details">
-        <div class="token-box">
-            <h3>Token Supply</h3>
-            <p>1,000,000,000,000 ALPHAS</p>
-        </div>
-        <div class="token-box">
-            <h3>Buy Tax</h3>
-            <p>2%</p>
-        </div>
-        <div class="token-box">
-            <h3>Sell Tax</h3>
-            <p>3%</p>
-        </div>
-        <div class="token-box">
-            <h3>Token Burned</h3>
-            <p>100,000,000,000 ALPHAS</p>
-        </div>
-    </div>
+                      <div data-clickable data-href="https://etherscan.io/tx/0x22e3fdd6df5f8fdaa5b8e7a95e9b3490f7af0d78a2cc0b20a3162d16d42f68ea" class="info-card-track-wallet">
+                        <div class="label-track">Renounced</div>
+                    
+                  </div>
 
-
-    <div class="tax-use">
-        <h3>What is the tax used for?</h3>
-        <p>When you purchase ALPHAS tokens, 1% supports marketing while another 1% aids global elephant charities. If you decide to sell, 1% supports marketing, another 1% enters you into a token holder lottery, and the final 1% is burned to ensure our token's value remains strong.</p>
-        <!-- <p>Our tax structure is designed for the long-term success of our project. A portion is allocated to sared among holders through a lottery mechanism, and the remaining percentage is dedicated to marketing, development, and further advancements of the project.</p>-->
-    
-    </div>
-    <div class="pie-chart-container">
-    <img src="/piechart-tokenomic.png" alt="ALPHAS LOGO">
-</div>
-    <div class="pie-chart-container2">
-        <img class="img-pie" src="/piechart-tokenomic.png" alt="ALPHAS LOGO">
-        <div class="piechart-box">
-            <h3>Supply Breakdown</h3>
-           <ul>
-            <li>55% is on Uniswap for trading.</li>
-                <li> 20% is set aside for other exchanges.</li>
-                    <li> 10% gets burned to keep the token valuable.</li>
-                        <li>15% is for those who stake their tokens and earn rewards.</li>
-           </ul>
-        </div>
-    </div>
-    
-    
-
-    <div class="extra-boxes">
-        <div class="token-box">
-            <h3>Audits</h3>
-            <p>Details about audits, security checks, and their results.</p>
-            <button class="box-button">View Audits</button>
-        </div>
-
-        <div class="token-box">
-            <h3>Voting</h3>
+                  <div data-clickable data-href="https://app.uncx.network/amm/uni-v2/pair/0x1ec478cc20c1a453871732f5494da74ccbb61c97" class="info-card-track-wallet">
+                    <div class="label-track">Liquidity</div>
+                   
+               
+              </div>
+                  </div>
+      
+      
+                  </div>
+      
+              </div>
+              <div class="double-row-t">
+                <div class="info-card-t-title">
+                    <div class="label-title" style="font-weight: bold;"  >Buy Tax</div>
+                    <div class="label-title" style="font-weight: bold;"  >2%</div>
+                </div>
+                <div class="info-card-t" id="content3-box-buy">
+                <p>1% supports marketing while another 1% aids global elephant charities</p>
+                </div>
+      
+            </div>
+            
+            <div class="double-row-t">
+              <div class="info-card-t-title">
+                  <div class="label-title" style="font-weight: bold;"  >Buy Tax</div>
+                  <div class="label-title" style="font-weight: bold;"  >3%</div>
+              </div>
+              <div class="info-card-t" id="content3-box">
+               <p>1% supports marketing, another 1% enters you into a token holder lottery, and the final 1% is burned to ensure our token's value remains strong.</p>
+              </div>
+      
+          </div>
+      
+              </div>
+              <div class="column">
+                  <div class="box box-content-5"></div>
+              </div>
+          </div>
+          <div class="columns-wrapper-row">
+          <div class="row">
+          <div class="box-row" style="background-image: url('/audit-tokenomic.png');">
+            <h2>Audits</h2>
+            <p>Details about security audits</p>
+            <a href="/ALPHAS-audit.pdf" class="btn">View Audits</a>  
+          </div> 
+          <div class="box-row" style="background-image: url('/Votetokenomic.png');">
+            <h2>Voting</h2>
             <p>Participate in governance votes and decisions.</p>
-            <button class="earn-button">Vote</button>
-
+            <a  class="btn">Comming soon</a>  
+          </div> 
+      
+          <div class="box-learn-more-title" >
+            <h1>Learn more</h1>
+            <div class="box-learn-more">
+            <div data-clickable data-href="staking.html" class="box-learn-more" style="background-image: url('/staking-tokenomic.png');">
+                
+            </div>
+            <div data-clickable data-href="lottery.html"  class="box-learn-more"  style="background-image: url('/Lottery-tokenomic.png');">
+                
+            </div>
+            <div class="box-learn-more" style="background-image: url('/alphasantuary-tokenomic.png');">
+                
+            </div>
         </div>
-    </div>
-
-    <div class="earn-section">
-        <h3>Start Earning</h3>
-        <p>Earn by staking ALPHAS tokens and being an active member of our community.</p>
-        <a href="https://alphaselephant.app/stake" class="earn-button">Start Earning</a>
-    </div>
+      </div>
+      
+        </div>
+      
+        </div> 
+        <div class="columns-wrapper-row">
+          <div class="row">
+          <div class="box-start-earning" style="background-image: url('/Start-earning-tokenomic.png');">
+            <h2>Start Earning</h2>
+            <p>Earn by staking ALPHAS tokens and being an active member of our community.</p>
+            <a href="https://alphaselephant.app/stake" class="btn">Start earning</a>  
+          </div> 
+          </div>
+          </div>
+      
+      
+      
+      </div>
+      
     
 </div>
 

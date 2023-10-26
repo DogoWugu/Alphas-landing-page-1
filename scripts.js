@@ -277,3 +277,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// Set the target date
+const targetDate = new Date("Nov 1, 2023 22:00:00 UTC");
+
+// Function to update the countdown
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeDiff = targetDate - now;
+
+    // Time calculations
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const hours1 = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+    // Update the DOM
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours1").innerHTML = hours1;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the countdown is finished
+    if (timeDiff < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}
+
+// Update the countdown every second
+const countdownInterval = setInterval(updateCountdown, 1000);
