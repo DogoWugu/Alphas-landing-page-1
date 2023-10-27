@@ -577,7 +577,7 @@ section img#mountains_front
     height: 90px;
     border-radius: 50%;
     background-color: rgba(230, 230, 250, 0.7);
-    border: 2px solid #6c6a6c;
+    border: 2px solid #e2e2e2;
     animation: pulse 1.2s infinite;
     position: absolute;
     top: 0;
@@ -2794,7 +2794,7 @@ body {
         
     }
     #content3-box-buy{
-        height: 115px;
+        height: 140px;
         padding-top: 5px;
         padding-bottom: 35px;
         background-color: #525052;
@@ -2806,7 +2806,7 @@ body {
     /* Buy tax */
     #content3-box-buy p {
         color: white;
-        margin-top: 30px;
+        margin-top: 20px;
     
     }
     
@@ -2820,6 +2820,7 @@ body {
         width: 375px !important;
         background-repeat: repeat;
         padding: 15px;
+        height: 120px;
     }
     .container-phone{
     display: table-row !important;      
@@ -2833,8 +2834,11 @@ body {
     }
     #content3-box p { 
         padding-right: 30px;
+        height: 140px;
     }
-
+    .double-row-t-t {
+        margin-top: 10px;
+    }
 
     .column {
         align-items: center !important;
@@ -2848,6 +2852,7 @@ body {
 }
 #content2-box {
     width: 375px !important;
+    height: 265px;
 }
 
 .box-content-5{
@@ -2856,7 +2861,9 @@ width: 375px;
 height: 265px;
 
 }
-
+box-row p {
+    margin: 2px;
+}
 .box-row {
     width: 375px;
 }
@@ -2879,6 +2886,7 @@ height: 265px;
 }
 .info-card-t-title {
     margin-left: 5px;
+    height: 140px;
 }
 info-card {
     padding: 13px 50px;
@@ -2887,6 +2895,7 @@ info-card {
     padding: 75px -1;
     margin-top: 75px;
     width: 390px;
+    height: 170px;
     }
     .box-learn-more-title {
         width: 375px;
