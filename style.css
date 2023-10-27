@@ -2693,7 +2693,7 @@ body {
         margin-top: 5px;
         background-color: #f4f4f4; /* Light gray background for the address box */
         border-radius: 20px;       /* Rounded corners */
-        padding: 15px 17px;        /* Some padding around the address */
+        padding: 10px 30px;        /* Some padding around the address */
         text-align: center;        /* Center the text */
         color: black !important;
         cursor: pointer;
