@@ -265,6 +265,7 @@ button1:active {
     border: none;
     transition: background-color 0.3s;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .translate-btn-mobile:hover {
@@ -281,8 +282,8 @@ button1:active {
 @media only screen and (max-width: 768px) {
     .translate-btn-mobile {
         display: inline-block;
-        margin-right: 10px;
-        margin-left: auto;
+        
+        
     }
 
 
@@ -2773,6 +2774,7 @@ body {
     padding-bottom: 35px;
     width: 440px;
     }
+
     #content3-box {
         height: 115px;
         padding-top: 5px;
@@ -2812,9 +2814,12 @@ body {
     .columns-wrapper{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .top-box{
         width: 375px !important;
+        background-repeat: repeat;
+        padding: 15px;
     }
     .container-phone{
     display: table-row !important;      
@@ -2831,63 +2836,72 @@ body {
     }
 
 
+    .column {
+        align-items: center !important;
+    }
+
+.box {
+    width: 370px !important;
+}
+.rounded-address {
+    font-size: 0.9em;
+}
+#content2-box {
+    width: 375px !important;
+}
+
 .box-content-5{
-margin-left: 30px;
+
 width: 375px;
 height: 265px;
 
 }
+
+.box-row {
+    width: 375px;
+}
+
+#track-wallet{
+    padding: 35px 21px;
+}
+
 #content3-box{
-    width: 300px;
+    width: 280px;
+    padding-left: 5px;
+    padding-right: 2px;
 }
 
 #content3-box-buy {
-    width: 300px;
+    width: 280px;
 }
 #content3-box-buy p{
-    padding-right: 30px;
+    padding-right: 20px;
 }
 .info-card-t-title {
-    margin-left: 30px;
+    margin-left: 5px;
 }
 info-card {
     padding: 13px 50px;
 }
 .box-start-earning{
     padding: 75px -1;
-    margin: 75px;
-    width: 445px;
+    margin-top: 75px;
+    width: 390px;
     }
     .box-learn-more-title {
-        width: 435px;
+        width: 375px;
     }
 
     .box-learn-more {
-        width: 435px;
+        width: 375px;
     }
 
 .row {
     display: flex !important;
     flex-direction: column !important;
+    align-items: center;
 }
 
 
     
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff; /* or any other color you prefer */
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-bottom: auto; 
-    }
-    
-    .btn:hover {
-        background-color: #0056b3; /* darken the color on hover */
-        box-shadow: 0 0 15px 5px rgba(0,123,255,0.7); /* Blue glow effect */
-    }
+      }
