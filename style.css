@@ -2637,7 +2637,7 @@ body {
     text-align: center;
     }
     .top-box h1 {
-        margin-top: 5px;
+        margin-top: 21px;
     }
     
 
@@ -2693,7 +2693,7 @@ body {
         margin-top: 5px;
         background-color: #f4f4f4; /* Light gray background for the address box */
         border-radius: 20px;       /* Rounded corners */
-        padding: 10px 30px;        /* Some padding around the address */
+        padding: 10px 25px;        /* Some padding around the address */
         text-align: center;        /* Center the text */
         color: black !important;
         cursor: pointer;
