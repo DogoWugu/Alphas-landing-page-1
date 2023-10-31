@@ -277,13 +277,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Set the target date
-const targetDate = new Date("Dec 1, 2023 00:00:00 UTC");
+// Initially set the target date for December 1
+let targetDate = new Date("Dec 1, 2023 00:00:00 UTC");
 
-// Function to update the countdown
+function setNextMonth() {
+    const currentMonth = targetDate.getUTCMonth(); 
+    const nextMonth = (currentMonth + 1) % 12; 
+    const year = (nextMonth === 0) ? targetDate.getUTCFullYear() + 1 : targetDate.getUTCFullYear(); 
+    targetDate = new Date(Date.UTC(year, nextMonth, 1));
+}
+
 function updateCountdown() {
     const now = new Date().getTime();
     const timeDiff = targetDate - now;
+
+    if (timeDiff < 0) {
+        setNextMonth(); // Reset target date to the next month
+        return;
+    }
 
     // Time calculations
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
@@ -296,13 +307,8 @@ function updateCountdown() {
     document.getElementById("hours1").innerHTML = hours1;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-
-    // If the countdown is finished
-    if (timeDiff < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-    }
 }
 
 // Update the countdown every second
 const countdownInterval = setInterval(updateCountdown, 1000);
+
