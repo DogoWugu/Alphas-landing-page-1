@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Set the target date
-const targetDate = new Date("Nov 1, 2023 22:00:00 UTC");
+const targetDate = new Date("Dec 1, 2023 00:00:00 UTC");
 
 // Function to update the countdown
 function updateCountdown() {
